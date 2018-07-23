@@ -1,0 +1,36 @@
+---
+layout: post
+title:  "defaultExport"
+date:   2018-07-20 14:21:18 +0200
+permalink: default-export
+---
+
+{% highlight json %}
+{
+    "@fortawesome/fontawesome-free": "^5.1.1",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-fa-minify": "git+https://github.com/NetWin/gulp-fa-minify.git",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.2.3",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-svgmin": "^1.2.4",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.7",
+    "gulpicon": "^1.0.0",
+    "imagemin-pngquant": "^4.2.0",
+    "jquery": "^3.3.1",
+    "js-cookie": "^2.2.0",
+    "slick-carousel": "^1.8.1",
+    "tailwindcss": "^0.5.3",
+    "tailwindcss-flexbox-order": "^1.0.0"
+  }
+{% endhighlight %}
+
