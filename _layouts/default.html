@@ -11,15 +11,15 @@
       <div class="constrain">
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
         {% if false %}
-        <p>
-          <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-            {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-            {{ page.date | date: date_format }}
-          </time>
-          {%- if page.author -%}
-            • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
-          {%- endif -%}
-        </p>
+          <p>
+            <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+              {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+              {{ page.date | date: date_format }}
+            </time>
+            {%- if page.author -%}
+              • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+            {%- endif -%}
+          </p>
         {% endif %}
       </div>
     </div>
@@ -31,7 +31,8 @@
             {%- if site.posts.size > 0 -%}
               <h4 class="post-list-heading">{{ page.list_title | default: "Choose a topic:" }}</h4>
               <ul class="post-list post-list--small">
-                {%- for post in site.posts -%}
+                {% assign posts = site.posts | reverse %}
+                {%- for post in posts -%}
                 <li>
                   <a class="post-link post-link--small{% if post.url == page.url %} active{%- endif -%}" href="{{ post.url | relative_url }}">
                     <h5>
