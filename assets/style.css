@@ -216,3 +216,19 @@ a:visited {
   background: #fff;
   padding: 20px;
 } */
+
+.fade-out-text {
+  position: relative;
+}
+
+.fade-out-text:after  {
+  position: absolute;
+  background: linear-gradient(to bottom, rgba(255,255,255,0), rgba(255,255,255,1));
+  content: '';
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+
