@@ -42,6 +42,18 @@
   text-decoration: none !important;
 }
 
+.site-footer .username {
+  text-decoration: none !important;
+}
+
+.footer-heading {
+  color: #ccc;
+}
+
+.footer-heading span {
+  opacity: .3;
+}
+
 .footer-icon {
   background: #fff;
   border-radius: 100px;
