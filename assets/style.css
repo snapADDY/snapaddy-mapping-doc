@@ -29,6 +29,19 @@
  * FOOTER
  */
 
+.site-footer {
+  background: #222;
+  color: #fff;
+}
+
+.site-footer a {
+  color: #666 !important;
+}
+.site-footer a:hover {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
 .footer-icon {
   background: #fff;
   border-radius: 100px;
