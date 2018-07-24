@@ -232,3 +232,24 @@ a:visited {
 }
 
 
+
+
+
+
+
+
+
+/**
+ * HIGHLIGHT
+ */
+
+
+.highlight code,
+.highlight pre {
+  background: #fff;
+}
+
+.highlight {
+  background: #fff;
+  margin-bottom: 30px;
+}
