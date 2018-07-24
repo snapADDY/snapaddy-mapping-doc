@@ -4,7 +4,9 @@ title:  "Mapping samples"
 date:   2018-07-20 14:21:18 +0200
 permalink: mapping-samples
 ---
+
 {% raw %}
+
 ## Test
 [snapADDY Mapping Samples](https://github.com/snapADDY/snapaddy-mapping-samples/tree/master)
 
