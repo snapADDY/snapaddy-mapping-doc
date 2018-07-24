@@ -7,12 +7,24 @@
 
     {%- include header.html -%}
 
+    <div class="hero">
+      <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+      <p>
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+          {{ page.date | date: date_format }}
+        </time>
+        {%- if page.author -%}
+          • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+        {%- endif -%}</p>
+    </div>
+
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
         <div class="grid">
           <div class="item">
             {%- if site.posts.size > 0 -%}
-              <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+              <h4 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h4>
               <ul class="post-list post-list--small">
                 {%- for post in site.posts -%}
                 <li>
@@ -28,7 +40,9 @@
 
           </div><!--
        --><div class="item">
-            {{ content }}
+            <div class="content">
+              {{ content }}
+            </div>
           </div>
         </div>
       </div>
