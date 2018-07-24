@@ -48,17 +48,20 @@
 
 
 
+
+
+
 /**
  * GRID
  */
 
 .grid {
   overflow: hidden;
-  margin-left: -20px;
+  margin-left: -60px;
 }
 
 .grid .item {
-  padding-left: 20px;
+  padding-left: 60px;
   display: inline-block;
   width: 50%;
   vertical-align: top;
