@@ -142,12 +142,38 @@ a:visited {
   transition: .15s;
 }
 
+.post-link p {
+  font-size: 16px;
+  color: #999 !important;
+  margin-bottom: 0;
+}
+.post-link h3,
+.post-link h5 {
+  color: #333 !important;
+}
+
+.post-link--small {
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.post-link--small h5 {
+  margin-bottom: 0;
+}
+
 .post-link:hover {
   text-decoration: none!important;
-  transform: scale(1.04);
+  transform: scale(1.02);
+}
+
+.post-list--small > li {
+  margin-bottom: 10px;
 }
 
 .post-link.active {
   background: #9da600;
+}
+.post-link.active h5,
+.post-link.active h3 {
   color: #fff !important;
 }
