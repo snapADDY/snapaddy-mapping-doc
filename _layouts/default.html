@@ -13,15 +13,13 @@
           <div class="item">
             {%- if site.posts.size > 0 -%}
               <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
-              <ul class="post-list">
+              <ul class="post-list post-list--small">
                 {%- for post in site.posts -%}
                 <li>
-                  <a class="post-link{% if post.url == page.url %} active{%- endif -%}" href="{{ post.url | relative_url }}">
-                    {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-                    <span class="post-meta">{{ post.date | date: date_format }}</span>
-                    <h3>
+                  <a class="post-link post-link--small{% if post.url == page.url %} active{%- endif -%}" href="{{ post.url | relative_url }}">
+                    <h5>
                       {{ post.title | escape }}
-                    </h3>
+                    </h5>
                   </a>
                 </li>
                 {%- endfor -%}
