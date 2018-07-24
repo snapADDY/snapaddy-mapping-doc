@@ -5,4 +5,6 @@
 layout: home
 ---
 
-asdfasdfas fd
+# **snapADDY** Mapping Documentation
+
+<p>{{- site.description | escape -}}</p>
