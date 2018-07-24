@@ -75,6 +75,12 @@ body {
   height: auto;
 }
 
+.footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
 
 
 
