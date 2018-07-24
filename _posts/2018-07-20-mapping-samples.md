@@ -5,7 +5,6 @@ date:   2018-07-20 14:21:18 +0200
 permalink: mapping-samples
 ---
 
-{% raw %}
 
 ## Test
 [snapADDY Mapping Samples](https://github.com/snapADDY/snapaddy-mapping-samples/tree/master)
@@ -15,8 +14,4 @@ If you are using only one of our products you can delete the section in the mapp
 
 snapADDY Grabber is mapped in the "defaultExport"-section.  
 snapADDY VisitReport is mapped in the "visitreport"-section.
-- 1
-- 2
-- 3
 
-{% endraw %}
