@@ -13,10 +13,8 @@
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
+            {%- if site.homepage -%}
+              <a href="{{ site.homepage }}">{{ site.homepage |remove_first: "https://" }}</a>
             {%- endif -%}
             </li>
             {%- if site.email -%}
