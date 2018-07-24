@@ -139,4 +139,15 @@ a:visited {
   padding: 20px;
   border-radius: 6px;
   background: #fff;
+  transition: .15s;
+}
+
+.post-link:hover {
+  text-decoration: none!important;
+  transform: scale(1.04);
+}
+
+.post-link.active {
+  background: #9da600;
+  color: #fff !important;
 }
