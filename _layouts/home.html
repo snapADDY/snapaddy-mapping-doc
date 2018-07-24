@@ -10,11 +10,8 @@
     <main class="page-content" aria-label="Content">
       <div class="wrapper">
           <div class="constrain">
-
-          {{ content }}
-
             {%- if site.posts.size > 0 -%}
-              <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+              <h4 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h4>
               <ul class="post-list">
                 {%- for post in site.posts -%}
                 <li>
@@ -24,8 +21,7 @@
                     <h3>
                       {{ post.title | escape }}
                     </h3>
-                    <p>                      {{ post.content | strip_html | truncatewords: 30 }}
-</p>
+                    <p>{{ post.content | strip_html | truncatewords: 30 }}</p>
                   </a>
                 </li>
                 {%- endfor -%}
