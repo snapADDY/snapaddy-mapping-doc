@@ -53,10 +53,11 @@ body {
 
 .footer-heading {
   color: #ccc;
+  margin-bottom: 0;
 }
 
 .footer-heading span {
-  opacity: .3;
+  opacity: .5;
 }
 
 .footer-icon {
@@ -68,6 +69,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
 }
 
 .footer-icon svg {
