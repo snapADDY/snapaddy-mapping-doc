@@ -24,7 +24,7 @@
         <div class="grid">
           <div class="item">
             {%- if site.posts.size > 0 -%}
-              <h4 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h4>
+              <h4 class="post-list-heading">{{ page.list_title | default: "Choose a topic:" }}</h4>
               <ul class="post-list post-list--small">
                 {%- for post in site.posts -%}
                 <li>
