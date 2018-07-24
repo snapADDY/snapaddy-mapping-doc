@@ -19,3 +19,21 @@
 .wrapper {
   max-width: calc(1200px - (30px * 2))
 }
+
+
+
+
+
+
+
+/**
+ * LINKS
+ */
+
+a {
+  color: #9da600;
+}
+
+a:visited {
+  color: #9da600;
+}
