@@ -93,25 +93,27 @@ body {
  * GRID
  */
 
-.grid {
-  overflow: hidden;
-  margin-left: -60px;
-}
+@media (min-width: 720px) {
+  .grid {
+    overflow: hidden;
+    margin-left: -60px;
+  }
 
-.grid .item {
-  padding-left: 60px;
-  display: inline-block;
-  width: 50%;
-  vertical-align: top;
-  box-sizing: border-box;
-}
+  .grid .item {
+    padding-left: 60px;
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
 
-.grid .item:first-child {
-  width: 30%;
-}
+  .grid .item:first-child {
+    width: 30%;
+  }
 
-.grid .item:last-child {
-  width: 70%;
+  .grid .item:last-child {
+    width: 70%;
+  }
 }
 
 
