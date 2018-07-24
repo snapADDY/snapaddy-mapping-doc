@@ -52,6 +52,22 @@
 .grid .item:last-child {
   width: 70%;
 }
+
+
+
+
+
+
+
+.constrain {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+
+
+
+
 /**
  * LINKS
  */
