@@ -26,7 +26,6 @@ url: "https://snapaddy.github.io" # the base hostname & protocol for your site, 
 twitter_username: snapaddy
 github_username:  snapADDY
 facebook_username: snapaddy
-#youtube_username: snapaddy
 
 # Build settings
 markdown: kramdown
