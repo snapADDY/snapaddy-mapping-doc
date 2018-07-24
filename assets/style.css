@@ -217,6 +217,34 @@ a:visited {
   padding: 20px;
 } */
 
+.post-list-heading {
+  font-size: 21px;
+  color: #999;
+}
+
+.site-nav-link {
+  text-decoration: none!important;
+  color: #ccc !important;
+  transition: .15s;
+}
+
+.site-nav-link:hover {
+  text-decoration: none!important;
+  color: #999 !important;
+}
+
+.site-nav-link span {
+  opacity: 0;
+  transition: .15s;
+}
+.site-nav-link:hover span {
+  opacity: 1;
+}
+
+
+
+
+
 .fade-out-text {
   position: relative;
 }
