@@ -29,6 +29,13 @@
           {%- endfor -%}
         </div>
       </nav>
+
+    {%- else -%}
+      {%- if site.homepage -%}
+        <div class="site-nav">
+          <a class="site-nav-link" target="_blank" href="{{ site.homepage }}">{{ site.homepage |remove_first: "https://" }} <span>&nearrow;</span></a>
+        </div>
+      {%- endif -%}
     {%- endif -%}
   </div>
 </header>
