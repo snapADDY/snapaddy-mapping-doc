@@ -10,6 +10,7 @@
     <div class="hero">
       <div class="constrain">
         <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+        {% if false %}
         <p>
           <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
             {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
@@ -19,6 +20,7 @@
             • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
           {%- endif -%}
         </p>
+        {% endif %}
       </div>
     </div>
 
