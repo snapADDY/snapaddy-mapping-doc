@@ -6,3 +6,7 @@
   border: none;
   box-shadow: 0 2px 5px rgba(0,0,0,0.15);
 }
+
+.wrapper {
+  max-width: calc(1200px - (30px * 2))
+}
