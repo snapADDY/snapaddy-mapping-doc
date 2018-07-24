@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "General"
+title:  "Getting started"
 date:   2018-07-01 14:21:18 +0200
-permalink: general
+permalink: getting-started
 ---
 
 ### snapADDY Grabber & VisitReport CRM Mapping Documentation
