@@ -121,6 +121,30 @@ body {
 
 
 
+
+
+
+
+/**
+ * HERO
+ */
+
+.hero {
+  background: #9da600;
+  padding: 60px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 0 1px 3px rgba(0,0,0,.05);
+}
+
+.hero p {
+  font-size: 21px;
+  opacity: .7;
+}
+
+
+
+
 /**
  * LINKS
  */
