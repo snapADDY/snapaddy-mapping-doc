@@ -26,6 +26,32 @@
 
 
 
+
+
+/**
+ * GRID
+ */
+
+.grid {
+  overflow: hidden;
+  margin-left: -20px;
+}
+
+.grid .item {
+  padding-left: 20px;
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.grid .item:first-child {
+  width: 30%;
+}
+
+.grid .item:last-child {
+  width: 70%;
+}
 /**
  * LINKS
  */
