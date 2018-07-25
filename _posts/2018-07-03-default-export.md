@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "defaultExport"
-date:   2018-07-20 14:21:18 +0200
+date:   2018-07-03 14:21:18 +0200
 permalink: default-export
 ---
 

@@ -4,8 +4,6 @@ title:  "Getting started"
 date:   2018-07-01 14:21:18 +0200
 permalink: getting-started
 ---
-
-### snapADDY Grabber & VisitReport CRM Mapping Documentation
 To use snapADDY Grabber & VisitReport in connection to your CRM system in the most convinient way a CRM mapping has to be done.
 
 The CRM mapping consists of one .json file which determines the following settings:
