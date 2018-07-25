@@ -9,112 +9,205 @@ It is only necessary to add a configuration here if you want to make a change to
 
 
 {% highlight json %}{% raw %}
+"lead":
 {
-  "workflows": {
-    "lead": [
-      {
-        "entity": "lead"
-      },
-      {
-        "entity": "campaignMember",
-        "dependsOn": [
-          {
-            "field": "LeadId",
-            "entity": "lead"
-          }
-        ],
-        "onError": "skip"
-      },
-      {
-        "entity": "task",
-        "dependsOn": [
-          {
-            "components": {
-                "lead": [],
-                "contact_account": []
-            }
-          }
-        }
-      }
-    ],
-    "contact_account": [
-      {
-        "entity": "account"
-      },
-      {
-        "entity": "contact",
-        "dependsOn": [
-          {
-            "field": "AccountId",
-            "entity": "account"
-          }
-        ]
-      },
-      {
-        "entity": "campaignMember",
-        "dependsOn": [
-          {
-            "field": "ContactId",
-            "entity": "contact"
-          }
-        ],
-        "onError": "skip"
-      },
-      {
-        "entity": "task",
-        "dependsOn": [
-          {
-            "field": "ContactId",
-            "entity": "contact"
-          }
-        ]
-      },
-      {
-        "entity": "attachments",
-        "config": {
-          "bcImage": {
-            "entities": [
-              "contact"
-            ],
-            "name": "VCard front.jpg"
-          },
-          "bcImageBackside": {
-            "entities": [
-              "contact"
-            ],
-            "name": "VCard back.jpg"
-          },
-          "drawing": {
-            "entities": [
-              "contact"
-            ],
-            "name": "Drawing.jpg"
-          },
-          "image": {
-            "entities": [
-              "contact"
-            ],
-            "name": "Profile image.jpg"
-          },
-          "attachments": {
-            "entities": [
-              "contact"
-            ],
-            "name": {
-              "*": "Attachment_${i}.png",
-              "PDF": "Attachment_${i}.pdf",
-              "SIGNATURE": "{{visitreport.title || '' }} - {{firstName || '' }} {{lastName || ''}} Signatur (${i}).pdf"
-            }
-          },
-          "note": {
-            "entities": [
-              "contact"
-            ],
-            "name": "Note"
-          }
-        }
-      }
-    ]
-  }
-}
+ [
+  {
+					"type": "lead",
+					"duplicateCheckName": "lead",
+					"label": {
+						"en": "Lead",
+						"de": "Lead"
+					},
+					"fields": {
+						"LeadId": {
+							"id": "LeadId",
+							"type": "input",
+							"label": {
+								"en": "Id",
+								"de": ""
+							},
+							"properties": {
+								"hidden": true,
+								"identifier": true
+							}
+						},
+						"Subject": {
+							"id": "Subject",
+							"type": "input",
+							"label": {
+								"en": "Topic",
+								"de": "Thema"
+							},
+							"properties": {
+								"required": true,
+								"maxLength": 50,
+              	"defaultValue": ""
+							}
+						}
+					},
+					"search": {
+						"ids": [
+							"FullName"
+						]
+					},
+					"mainTemplate": "{{ FirstName }} {{ LastName }}",
+					"detailsTemplate": "{{ CompanyName }}"
+				}, {
+					"type": "appointment",
+					"duplicateCheckName": "appointment",
+					"label": {
+						"en": "Appointment",
+						"de": "Appointment"
+					},
+					"fields": {
+						"ActivityId": {
+							"id": "ActivityId",
+							"type": "input",
+							"label": {
+								"en": "Id",
+								"de": ""
+							},
+							"properties": {
+								"hidden": true,
+								"identifier": true
+							}
+						},
+						"Subject": {
+							"id": "Subject",
+							"type": "input",
+							"label": {
+								"en": "Subject",
+								"de": "Betreff"
+							},
+							"properties": {
+								"required": true
+							}
+						},
+						"Location": {
+							"id": "Location",
+							"type": "input",
+							"label": {
+								"en": "Location",
+								"de": "Ort"
+							},
+							"properties": {}
+						},
+						"ScheduledStart": {
+							"id": "ScheduledStart",
+							"type": "input",
+							"label": {
+								"en": "Scheduled start",
+								"de": "Startdatum"
+							}
+						},
+						"ScheduledEnd": {
+							"id": "ScheduledEnd",
+							"type": "input",
+							"label": {
+								"en": "Scheduled end",
+								"de": "Fälligkeitsdatum"
+							}
+						},
+						"RegardingObjectId": {
+							"id": "RegardingObjectId",
+							"type": "input",
+							"label": {
+								"en": "RegardingObjectId",
+								"de": ""
+							},
+							"properties": {
+								"hidden": true,
+								"identifier": true
+							}
+						}
+					},
+					"search": {
+						"ids": [
+							"Subject"
+						]
+					},
+					"components": [],
+					"mainTemplate": "{{ Subject }}",
+					"detailsTemplate": ""
+				}, {
+					"type": "task",
+					"duplicateCheckName": "task",
+					"label": {
+						"en": "Task",
+						"de": "Task"
+					},
+					"fields": {
+						"ActivityId": {
+							"id": "ActivityId",
+							"type": "input",
+							"label": {
+								"en": "Id",
+								"de": ""
+							},
+							"properties": {
+								"hidden": true,
+								"identifier": true
+							}
+						},
+						"Subject": {
+							"id": "Subject",
+							"type": "input",
+							"label": {
+								"en": "Subject",
+								"de": "Betreff"
+							},
+							"properties": {
+								"required": true
+							}
+						},
+						"Description": {
+							"id": "Description",
+							"type": "textArea",
+							"label": {
+								"en": "Description",
+								"de": "Beschreibung"
+							},
+							"properties": {}
+						},
+						"ScheduledStart": {
+							"id": "ScheduledStart",
+							"type": "input",
+							"label": {
+								"en": "Scheduled start",
+								"de": "Startdatum"
+							}
+						},
+						"ScheduledEnd": {
+							"id": "ScheduledEnd",
+							"type": "input",
+							"label": {
+								"en": "Scheduled end",
+								"de": "Fälligkeitsdatum"
+							}
+						},
+						"RegardingObjectId": {
+							"id": "RegardingObjectId",
+							"type": "input",
+							"label": {
+								"en": "RegardingObjectId",
+								"de": ""
+							},
+							"properties": {
+								"hidden": true,
+								"identifier": true
+							}
+						}
+					},
+					"search": {
+						"ids": [
+							"Subject"
+						]
+					},
+					"components": [],
+					"mainTemplate": "{{ Subject }}",
+					"detailsTemplate": ""
+				}
+			]
+    }
 {% endraw %}{% endhighlight %}
