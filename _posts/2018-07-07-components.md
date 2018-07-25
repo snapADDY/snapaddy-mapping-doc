@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "workflows"
+title: "components"
 date: 2018-07-06 14:21:18 +0200
 permalink: components
 ---
