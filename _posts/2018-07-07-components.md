@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "workflows"
-date: 2018-07-06 14: 21: 18 +0200
-permalink: workflows
+title: "components"
+date: 2018-07-07 14: 21: 18 +0200
+permalink: components
 ---
-The "workflows"-section determines the entities which should be created when exporting. Here is also defined in which entity the attachments like bcImage (Businesscard image) or Note should be attached to.
+The "components"-section determines the view of the export modal. You can hide fields, make them mandatory or
 
 
 {% highlight json %
