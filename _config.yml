@@ -17,8 +17,8 @@ title: snapADDY
 sub_title: Mapping Documentation
 email: support@snapaddy.com
 description: >- # this means to ignore newlines until "baseurl:"
-snapADDY is a sales tool that saves you a lot of time and effort when researching and collecting contact data. Automatic maintenance of contact data in your CRM system!
-This reference helps customers to make a custom CRM mapping with snapADDY.
+  snapADDY is a sales tool that saves you a lot of time and effort when researching and collecting contact data. Automatic maintenance of contact data in your CRM system!
+  This reference helps customers to make a custom CRM mapping with snapADDY.
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://mapping.snapaddy.com" # the base hostname & protocol for your site, e.g. http://example.com
 homepage: "https://snapaddy.com"
