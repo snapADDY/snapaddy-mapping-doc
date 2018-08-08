@@ -10,11 +10,18 @@ For more details have a look at [mappings](), [workflows]() and [components]()
 
 {% highlight json %}{% raw %}
 {
-      "defaultExport": {
-            "mappings": {},
-            "workflows": {},
-            "components": {}
+      "visitReport": {
+            "mappings": {
+            "*":{}
+            },
+            "workflows": {
+            "*":{}
+            },
+            "components": {
+            "*":{}
+            }
         }
   }
 {% endraw %}{% endhighlight %}
 
+You can create mulitple mappings for different templates by exchaning the "*", which is a variable for "applies to all templates", with the MappingId of the desired template.
