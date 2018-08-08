@@ -8,4 +8,4 @@ This is a list of the available variables used in the VisitReport mapping.
 
 | Variable                       | Behaviour                             |
 |--------------------------------|---------------------------------------|
-| "{{ _answers['QUESTIONID'] }}" | The answer of the referenced question |
+| "{% raw %}{{ _answers['QUESTIONID'] }}{% endraw %}" | The answer of the referenced question |
