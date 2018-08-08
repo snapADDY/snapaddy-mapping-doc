@@ -6,7 +6,7 @@ permalink: variables-grabber
 ---
 This is a list of the available fields in the Grabber and their corresponding variables for the mapping. This is very useful as there are special fields for the different CRMs. However, there are some default fields that are availabe for all CRMs. Fields that are marked with a star (*) have some special behaviour and are listed in a additional table below.
 
-###Default fields
+### Default fields
 
 | Label Grabber DE       	| Label Grabber EN        	| Variable for Mapping    	|
 |------------------------	|-------------------------	|-------------------------	|
@@ -36,7 +36,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 | nicht sichtbar         	| not visible             	| {{createdBy}} *         	|
 | nicht sichtbar         	| not visible             	| {{createdByName}} *     	|
 
-###Special default fields
+### Special default fields
 
 | Field name        	| Behaviour                                                                                                                                                                                                               	|
 |-------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
@@ -45,7 +45,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 | {{state}}         	| the Grabber automatically grabs the State ISO Codes (ISO 3166-2:DE - Wikipedia)e.g.: "BY" is grabbed for bavarian addresses                                                                                             	|
 | {{createdBy}}     	| returns the e-mail address of the user signed in to the grabbere.g. "r.hahn@snapaddy.com"                                                                                                                               	|
 | {{createdByName}} 	| return the first and last name of the user signed in to the grabbere.g. "Rico Hahn"                                                                                                                                     	|
-###Special variables by CRM
+### Special variables by CRM
 
 | Label Grabber DE                             | Label Grabber EN                          | Variable for Mapping |
 |----------------------------------------------|-------------------------------------------|----------------------|
@@ -61,7 +61,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 | {{org_id}}    | returns the id of the created organization so the organization can be linked to the deal and the person |
 | {{person_id}} | returns the id of the created person so the person can be linked to the deal                            |
 
-###Salesforce
+### Salesforce
 
 | Label Grabber DE                                  | Label Grabber EN                                   | Variable for Mapping          |
 |---------------------------------------------------|----------------------------------------------------|-------------------------------|
@@ -76,7 +76,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 |---------------|--------------------------------------------------------------------------------------------|
 | {{accountId}} | returns the id of the created organization so the organization can be linked to the person |
 
-###Dynamics
+### Dynamics
 
 | Label Grabber DE                 | Label Grabber EN                 | Variable for Mapping     |
 |----------------------------------|----------------------------------|--------------------------|
