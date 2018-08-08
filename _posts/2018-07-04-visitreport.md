@@ -12,13 +12,13 @@ For more details have a look at [mappings](), [workflows]() and [components]()
 {
       "visitReport": {
             "mappings": {
-            "*":{}
+                  "*":{}
             },
             "workflows": {
-            "*":{}
+                  "*":{}
             },
             "components": {
-            "*":{}
+                  "*":{}
             }
         }
   }
