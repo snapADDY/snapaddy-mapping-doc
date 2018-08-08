@@ -39,13 +39,14 @@ This is a list of the available fields in the Grabber and their corresponding va
 
 ### Special default fields
 
-| Field name        	| Behaviour                                                                                                                                                                                                               	|
-|-------------------	|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
+| Field name        	| Behaviour                                 																															  	|
+|-------------------|-------------------------------------------------------------------------------																								|
 | {% raw %}{{gender}}{% endraw %}        	| depends on the salutation-field in the grabberreturns -1 when nothing is selectedreturns 0 when male salutation is selected (DE: "Herr"; EN: "Mr.")returns 1 when female salutation is selected (DE: "Frau"; EN: "Ms.") 	|
-| {% raw %}{{country}}{% endraw %}       	| the Grabber automatically grabs the Country ISO Codes (ISO-3166-1-Kodierliste – Wikipedia)e.g.: "DE" is grabbed for german addresses                                                                                    	|
-| {% raw %}{{state}}{% endraw %}         	| the Grabber automatically grabs the State ISO Codes (ISO 3166-2:DE - Wikipedia)e.g.: "BY" is grabbed for bavarian addresses                                                                                             	|
-| {% raw %}{{createdBy}}{% endraw %}     	| returns the e-mail address of the user signed in to the grabbere.g. "r.hahn@snapaddy.com"                                                                                                                               	|
-| {% raw %}{{createdByName}}{% endraw %} 	| return the first and last name of the user signed in to the grabbere.g. "Rico Hahn"                                                                                                                                     	|
+| {% raw %}{{country}}{% endraw %}       	| the Grabber automatically grabs the Country ISO Codes (ISO-3166-1-Kodierliste – Wikipedia)e.g.: "DE" is grabbed for german addresses                 	|
+| {% raw %}{{state}}{% endraw %}         	| the Grabber automatically grabs the State ISO Codes (ISO 3166-2:DE - Wikipedia)e.g.: "BY" is grabbed for bavarian addresses                           |
+| {% raw %}{{createdBy}}{% endraw %}     	| returns the e-mail address of the user signed in to the grabbere.g. "r.hahn@snapaddy.com"                                                          	|
+| {% raw %}{{createdByName}}{% endraw %} 	| return the first and last name of the user signed in to the grabbere.g. "Rico Hahn"                                                                   |
+
 ### Special variables by CRM
 
 | Label Grabber DE                             | Label Grabber EN                          | Variable for Mapping |
