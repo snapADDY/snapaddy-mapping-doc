@@ -7,7 +7,7 @@ permalink: variables-grabber
 This is a list of the available fields in the Grabber and their corresponding variables for the mapping. This is very useful as there are special fields for the different CRMs. However, there are some default fields that are availabe for all CRMs. Fields that are marked with a star (*) have some special behaviour and are listed in a additional table below.
 
 ### Default fields
-
+{% raw %}
 | Label Grabber DE       	| Label Grabber EN        	| Variable for Mapping    	|
 |------------------------	|-------------------------	|-------------------------	|
 | Vorname                	| First name              	| {{firstName}}           	|
@@ -35,7 +35,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 | Notiz                  	| Note                    	| {{note}}                	|
 | nicht sichtbar         	| not visible             	| {{createdBy}} *         	|
 | nicht sichtbar         	| not visible             	| {{createdByName}} *     	|
-
+{% endraw %}
 ### Special default fields
 
 | Field name        	| Behaviour                                                                                                                                                                                                               	|
