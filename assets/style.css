@@ -306,3 +306,9 @@ a:visited {
   background: #fff;
   margin-bottom: 30px;
 }
+
+table pre, table code {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
