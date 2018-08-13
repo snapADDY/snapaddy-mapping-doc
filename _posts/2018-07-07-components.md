@@ -13,47 +13,47 @@ It is only necessary to add a configuration here if you want to make a change to
 {
  [
   {
-					"type": "lead",
-					"duplicateCheckName": "lead",
-					"label": {
-						"en": "Lead",
-						"de": "Lead"
-					},
-					"fields": {
-						"LeadId": {
-							"id": "LeadId",
-							"type": "input",
-							"label": {
-								"en": "Id",
-								"de": ""
-							},
-							"properties": {
-								"hidden": true,
-								"identifier": true
-							}
-						},
-						"Subject": {
-							"id": "Subject",
-							"type": "input",
-							"label": {
-								"en": "Topic",
-								"de": "Thema"
-							},
-							"properties": {
-								"required": true,
-								"maxLength": 50,
-              	"defaultValue": ""
-							}
-						}
-					},
-					"search": {
-						"ids": [
-							"FullName"
-						]
-					},
-					"mainTemplate": "{{ FirstName }} {{ LastName }}",
-					"detailsTemplate": "{{ CompanyName }}"
+	"type": "lead",
+	"duplicateCheckName": "lead",
+	"label": {
+		"en": "Lead",
+		"de": "Lead"
+		},
+	"fields": {
+		"LeadId": {
+			"id": "LeadId",
+			"type": "input",
+			"label": {
+				"en": "Id",
+				"de": ""
+			},
+			"properties": {
+				"hidden": true,
+				"identifier": true
 				}
+		},
+		"Subject": {
+			"id": "Subject",
+			"type": "input",
+			"label": {
+				"en": "Topic",
+				"de": "Thema"
+		},
+			"properties": {
+				"required": true,
+				"maxLength": 50,
+              			"defaultValue": ""
+					}
+				}
+		},
+	"search": {
+		"ids": [
+			"FullName"
 			]
-    }
+		},
+	"mainTemplate": "{{ FirstName }} {{ LastName }}",
+	"detailsTemplate": "{{ CompanyName }}"
+		}
+ ]
+}
 {% endraw %}{% endhighlight %}
