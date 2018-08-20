@@ -13,6 +13,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 |------------------------	|-------------------------	|-------------------------	|
 | Vorname                	| First name              	| {% raw %}{{firstName}}{% endraw %}         	|
 | Nachname               	| Last name               	| {% raw %}{{lastName}}{% endraw %}            	|
+| Firma               	    | Company             	    | {% raw %}{{organization}}{% endraw %}         |
 | Anrede                 	| Salutation              	| {% raw %}{{gender}}{% endraw %} *            	|
 | Titel                  	| Title                   	| {% raw %}{{title}}{% endraw %}               	|
 | Funktion               	| Position                	| {% raw %}{{position}}{% endraw %}            	|
@@ -49,38 +50,27 @@ This is a list of the available fields in the Grabber and their corresponding va
 
 ### Special variables by CRM
 
+### Pipedrive
+
 | Label Grabber DE                             | Label Grabber EN                          | Variable for Mapping |
 |----------------------------------------------|-------------------------------------------|----------------------|
-| Name (nur im Geschäft Export-View)           | Name (only in Deal Export View)           | {% raw %}{{deal_title}}{% endraw %}       |
+| Name (nur im Geschäft Export-View)           | Name (only in Deal Export View)           | {% raw %}{{organization}}{% endraw %}     |
 | Wert (nur im Geschäft Export-View)           | Value (only in Deal Export View)          | {% raw %}{{deal_value}}{% endraw %}       |
 | Währung (nur im Geschäft Export-View)        | Currency (only in Deal Export View)       | {% raw %}{{deal_currency}}{% endraw %}    |
 | Pipeline-Phase (nur im Geschäft Export-View) | Pipeline-Phase (only in Deal Export View) | {% raw %}{{deal_stage}}{% endraw %}       |
-| nicht sichtbar                               | not visible                               | {% raw %}{{org_id}}{% endraw %} *         |
-| nicht sichtbar                               | not visible                               | {% raw %}{{person_id}}{% endraw %} *      |
-
-| Field name    | Behaviour                                                                                               |
-|---------------|---------------------------------------------------------------------------------------------------------|
-| {% raw %}{{org_id}}{% endraw %}    | returns the id of the created organization so the organization can be linked to the deal and the person |
-| {% raw %}{{person_id}}{% endraw %} | returns the id of the created person so the person can be linked to the deal                            |
 
 ### Salesforce
 
 | Label Grabber DE                                  | Label Grabber EN                                   | Variable for Mapping          |
 |---------------------------------------------------|----------------------------------------------------|-------------------------------|
-| nicht sichtbar                                    | not visible                                        | {% raw %}{{accountId}}{% endraw %} *               |
 | Status (nur im Lead Export-View)                  | Status (only in Lead Export View)                  | {% raw %}{{selectedLeadStatus}}{% endraw %}        |
 | Lead-Quelle (nur im Lead Export-View)             | Lead-Quelle (only in Lead Export View)             | {% raw %}{{selectedLeadSource}}{% endraw %}        |
 | Datensatztyp-Lead (nur im Lead Export-View)       | Datensatztyp-Lead (only in Lead Export View)       | {% raw %}{{selectedLeadRecordType}}{% endraw %}    |
 | Datensatztyp-Kontakt (nur im Kontakt Export-View) | Datensatztyp-Contact (only in Contact Export View) | {% raw %}{{selectedContactRecordType}}{% endraw %} |
 | Datensatztyp-Account (nur im Account Export-View) | Datensatztyp-Account (only in Account Export View) | {% raw %}{{selectedAccountRecordType}}{% endraw %} |
 
-| Field name    | Behaviour                                                                                  |
-|---------------|--------------------------------------------------------------------------------------------|
-| {% raw %}{{accountId}}{% endraw %} | returns the id of the created organization so the organization can be linked to the person |
-
 ### Dynamics
 
 | Label Grabber DE                 | Label Grabber EN                 | Variable for Mapping     |
 |----------------------------------|----------------------------------|--------------------------|
-| nicht sichtbar                   | not visible                      | {% raw %}{{_account.AccountId}}{% endraw %} * |
-| Thema (nur im Lead Export-View ) | Topic (only in Lead Export View) | {% raw %}{{topic}}{% endraw %}                |
+| Thema (nur im Lead Export-View ) | Topic (only in Lead Export View) | {% raw %}{{organization}}{% endraw %}         |
