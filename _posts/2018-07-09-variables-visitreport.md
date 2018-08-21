@@ -11,6 +11,6 @@ This is a list of the available variables used in the VisitReport mapping.
 | `{% raw %}{{ _answers['QUESTIONID'] }}{% endraw %}` | The answer of the referenced question [(How to get IDs)](http://mapping.snapaddy.com/mappinghelper) |
 | `{% raw %}{{ visitreport.title }}{% endraw %}` | The title of the template |
 | `{% raw %}{{ visitreport.campaignId }}{% endraw %}` | The campaign ID entered in the template settings |
-| `{% raw %}{{ _answers['QUESTIONID'].question }}{% endraw %}` | The title of the referenced question |
-| `{% raw %}{{ _answers['QUESTIONID'].data }}{% endraw %}` | The mapped value of the answer of the referenced question or the title of the answer if no value is mapped |
-| `{% raw %}{{ _answers['QUESTIONID'].text}}{% endraw %}` | The title of the answer of the referenced question |
+| `{% raw %}{{ visitreport.result['ID'].question }}{% endraw %}` | The title of the referenced question |
+| `{% raw %}{{ visitreport.result['ID'].data }}{% endraw %}` | The mapped value of the answer of the referenced question or the title of the answer if no value is mapped |
+| `{% raw %}{{ visitreport.result['ID'].text}}{% endraw %}` | The title of the answer of the referenced question |
