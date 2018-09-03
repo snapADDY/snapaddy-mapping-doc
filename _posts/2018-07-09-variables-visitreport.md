@@ -10,6 +10,7 @@ This is a list of the available variables used in the VisitReport mapping.
 |--------------------------------|---------------------------------------|
 | `{% raw %}{{ _answers['QUESTIONID'] }}{% endraw %}` | The answer of the referenced question [(How to get IDs)](http://mapping.snapaddy.com/mappinghelper) |
 | `{% raw %}{{ visitreport.title }}{% endraw %}` | The title of the template |
+| `{% raw %}{{ created }}{% endraw %}` | Timestamp when the report was created. Form is like this: 2018-09-03T08:57:26.000Z |
 | `{% raw %}{{ visitreport.campaignId }}{% endraw %}` | The campaign ID entered in the template settings |
 | `{% raw %}{{ visitreport.result['ID'].question }}{% endraw %}` | The title of the referenced question |
 | `{% raw %}{{ visitreport.result['ID'].data }}{% endraw %}` | The mapped value of the answer of the referenced question or the title of the answer if no value is mapped |
