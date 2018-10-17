@@ -19,6 +19,7 @@ Inside defaultExport and visitreport there are 3 more blocks:
 
 {% highlight json %}{% raw %}
 {
+    "customFields": [],
     "integrations": {
         "salesforce": {
             "meta": {},
