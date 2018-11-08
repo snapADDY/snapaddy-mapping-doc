@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Section: components"
+title: "Section: notifications"
 date: 2018-07-08 14:21:18 +0200
-permalink: components
+permalink: notifications
 ---
 In the "notifications"-section you can configure the "Follow-up Mail" functionality.
 Follow-up mails can be triggered either by exporting reports from the app or by checking reports in the dashboard.
