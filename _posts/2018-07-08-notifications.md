@@ -55,7 +55,8 @@ Examples:
     }
   }
 }
-
+{% endraw %}{% endhighlight %}
+{% highlight json %}{% raw %}
 {
   "integrations": {
     "notifications": {
