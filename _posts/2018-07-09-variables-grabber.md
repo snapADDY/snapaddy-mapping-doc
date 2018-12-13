@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Variables: Grabber"
+title: "Variables: Grabber & VisitReport"
 date: 2018-07-08 14:21:18 +0200
 permalink: variables-grabber
 ---
