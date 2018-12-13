@@ -11,9 +11,9 @@ This is a list of the available fields in the Grabber and their corresponding va
 
 | Label Grabber DE       	| Label Grabber EN        	| Variable for Mapping    	|
 |------------------------	|-------------------------	|-------------------------	|
-| Vorname                	| First name              	| {% raw %}{{firstName}}{% endraw %}         	|
+| Vorname                	| First name              	| {% raw %}{{firstName}}{% endraw %}         	  |
 | Nachname               	| Last name               	| {% raw %}{{lastName}}{% endraw %}            	|
-| Firma               	    | Company             	    | {% raw %}{{organization}}{% endraw %}         |
+| Firma               	  | Company             	    | {% raw %}{{organization}}{% endraw %}         |
 | Anrede                 	| Salutation              	| {% raw %}{{gender}}{% endraw %} *            	|
 | Titel                  	| Title                   	| {% raw %}{{title}}{% endraw %}               	|
 | Funktion               	| Position                	| {% raw %}{{position}}{% endraw %}            	|
@@ -22,7 +22,9 @@ This is a list of the available fields in the Grabber and their corresponding va
 | Fax                    	| Fax                     	| {% raw %}{{fax}}{% endraw %}                 	|
 | E-Mail                 	| E-Mail                  	| {% raw %}{{email}}{% endraw %}               	|
 | Website                	| Website                 	| {% raw %}{{website}}{% endraw %}             	|
-| Straße                 	| Street                  	| {% raw %}{{street}}{% endraw %}              	|
+| Straße + Nr.           	| Street + Nr.             	| {% raw %}{{street}}{% endraw %}              	|
+| Straße                 	| Street                  	| {% raw %}{{parseStreet(street).street}}{% endraw %}              	|
+| Hausnummer             	| Housenumber               | {% raw %}{{parseStreet(street).number}}{% endraw %}              	|
 | Adresszusatz           	| Address Line 2          	| {% raw %}{{street2}}{% endraw %}             	|
 | PLZ                    	| ZIP / Postalcode        	| {% raw %}{{zip}}{% endraw %}                 	|
 | Ort                    	| City                    	| {% raw %}{{city}}{% endraw %}                	|
