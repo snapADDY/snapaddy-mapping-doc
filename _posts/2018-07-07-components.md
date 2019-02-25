@@ -74,5 +74,5 @@ It is only necessary to add a configuration here if you want to make a change to
 | `{% raw %}hidden{% endraw %}`  | field will be hidden in export view, value will be send |
 | `{% raw %}required{% endraw %}` | if the field is empty, the export will not be possible |
 | `{% raw %}identifier{% endraw %}` | value will always be send, even if not modified |
-| `{% raw %}maxLength{% endraw %}` | if the maxLength is exceeded, a popup notifies the user (field type `{% raw %}input{% endraw %}` only |
-| `{% raw %}defaultValue{% endraw %}` | the `{% raw %}defaultValue{% endraw %}` will be inserted, if the field is left blank |
+| `{% raw %}maxLength{% endraw %}` | if the maxLength is exceeded, a popup notifies the user (field type `{% raw %}input{% endraw %}` only) |
+| `{% raw %}defaultValue{% endraw %}` | `{% raw %}defaultValue{% endraw %}`, the `{% raw %}defaultValue{% endraw %}` will be inserted |
