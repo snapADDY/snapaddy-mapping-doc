@@ -40,4 +40,4 @@ Inside defaultExport and visitreport there are 3 more blocks:
 }
 {% endraw %}{% endhighlight %}
 
-You will find a mapping sample for each supported CRM system in ["Mapping Samples"](https://snapaddy.github.io/snapaddy-mapping-doc/mapping-samples)
+You will find a mapping sample for each supported CRM system in ["Mapping Samples"](https://mapping.snapaddy.com/mapping-samples)
