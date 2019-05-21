@@ -6,16 +6,17 @@ permalink: variables-visitreport
 ---
 This is a list of the available variables used in the VisitReport mapping.
 
-| Variable                       | Behaviour                             |
-|--------------------------------|---------------------------------------|
-| `{% raw %}{{ _answers['QUESTIONID'] }}{% endraw %}` | The answer of the referenced question [(How to get IDs)](http://mapping.snapaddy.com/mappinghelper) |
-| `{% raw %}{{ visitreport.title }}{% endraw %}` | The title of the template |
-| `{% raw %}{{ created }}{% endraw %}` | Timestamp when the report was created. Form is like this: 2018-09-03T08:57:26.000Z |
-| `{% raw %}{{ visitreport.campaignId }}{% endraw %}` | The campaign ID entered in the template settings |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].question }}{% endraw %}` | The title of the referenced question |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].data }}{% endraw %}` | The mapped value of the answer of the referenced question or the title of the answer if no value is mapped. Same behaviour as _answers['QUESTIONID'] |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].text}}{% endraw %}` | The title of the answer of the referenced question |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].options['OPTIONID'].title }}{% endraw %}` | Defined option label in current grabber / export language |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].options['OPTIONID'].text }}{% endraw %}` | User input for specific option or null if not selected/filled |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].options['OPTIONID'].data }}{% endraw %}` | User input / value if available, else value. Null if not selected/filled |
-| `{% raw %}{{ visitreport.result['QUESTIONID'].options['OPTIONID'].value }}{% endraw %}` | Value of the option, null if not selected/filled |
+| Variable                                                                        | Behaviour                                                                                                                          |
+|---------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------|
+| _answers['QUESTIONID']                                                          | The answer of the referenced question, ';'-delimited if multiple options were available               [(How to get IDs)](http://mapping.snapaddy.com/mappinghelper)                             |
+| visitreport.result['QUESTIONID']                                                | Object containing more detailed information about questions + answers                                                              |
+| visitreport.result['QUESTIONID'].questionvisitreport.result['QUESTIONID'].title | Question title in current grabber / export language                                                                                |
+| visitreport.result['QUESTIONID'].text                                           | User input, in case of multiple input options (;-delimited)                                                                        |
+| visitreport.result['QUESTIONID'].data                                           | Values set for each selected questionOption (only used in select + multiselect) or if no Value is set the User Input (;-delimited) |
+| visitreport.result['QUESTIONID'].value                                          | Values for each selected questionOption (;-delimited)                                                                              |
+| visitreport.result['QUESTIONID'].options['OPTIONID']                            | More detailed information about the selected/answered options                                                                      |
+| visitreport.result['QUESTIONID'].options['OPTIONID'].title                      | Defined option label in current grabber / export language                                                                          |
+| visitreport.result['QUESTIONID'].options['OPTIONID'].text                       | null if not filled / selected else User input for specific option (useful for multiple input options)                              |
+| visitreport.result['QUESTIONID'].options['OPTIONID'].data                       | null if not filled / selected else userinput || value || label                                                                     |
+| visitreport.result['QUESTIONID'].options['OPTIONID'].value                      | null if not filled/selected else questionoption.value                                                                              |
+
