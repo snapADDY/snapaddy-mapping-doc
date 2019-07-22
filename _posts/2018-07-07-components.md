@@ -63,17 +63,20 @@ It is only necessary to add a configuration here if you want to make a change to
         ]
       },
       "mainTemplate": "{{ FirstName }} {{ LastName }}",
-      "detailsTemplate": "{{ CompanyName }}"
+      "detailsTemplate": "{{ CompanyName }}",
+      "hideEnableToggle": false
     }
   ]
 }
 {% endraw %}{% endhighlight %}
 
-| Property                       | Effect                                |
-|--------------------------------|---------------------------------------|
-| `{% raw %}hidden{% endraw %}`  | field will be hidden in export view, value will be send |
-| `{% raw %}required{% endraw %}` | if the field is empty, the export will not be possible |
-| `{% raw %}identifier{% endraw %}` | value will always be send, even if not modified |
-| `{% raw %}maxLength{% endraw %}` | if the maxLength is exceeded, a popup notifies the user (field type `{% raw %}input{% endraw %}` only) |
-| `{% raw %}defaultValue{% endraw %}` | `{% raw %}defaultValue{% endraw %}`, the `{% raw %}defaultValue{% endraw %}` will be inserted |
-| `{% raw %}locked{% endraw %}` | field can not be modified, always uses the value received from the CRM |
+# Field properties
+
+| Property                             | Effect                                |
+|--------------------------------------|---------------------------------------|
+| `{% raw %}hidden{% endraw %}`        | field will be hidden in export view, value will be send |
+| `{% raw %}required{% endraw %}`      | if the field is empty, the export will not be possible |
+| `{% raw %}identifier{% endraw %}`    | value will always be send, even if not modified |
+| `{% raw %}maxLength{% endraw %}`     | if the maxLength is exceeded, a popup notifies the user (field type `{% raw %}input{% endraw %}` only) |
+| `{% raw %}defaultValue{% endraw %}`  | `{% raw %}defaultValue{% endraw %}`, the `{% raw %}defaultValue{% endraw %}` will be inserted |
+| `{% raw %}locked{% endraw %}`        | field can not be modified, always uses the value received from the CRM |
