@@ -64,7 +64,7 @@ It is only necessary to add a configuration here if you want to make a change to
       },
       "mainTemplate": "{{ FirstName }} {{ LastName }}",
       "detailsTemplate": "{{ CompanyName }}",
-      "hideEnableToggle": false
+      "preventDisableEntity": false
     }
   ]
 }
