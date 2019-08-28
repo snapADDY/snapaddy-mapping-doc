@@ -15,7 +15,7 @@ This is a list of the available fields in the Grabber and their corresponding va
 | Nachname               	| Last name               	| {% raw %}{{lastName}}{% endraw %}            	|
 | Firma               	  | Company             	    | {% raw %}{{organization}}{% endraw %}         |
 | Anrede                 	| Salutation              	| {% raw %}{{gender}}{% endraw %} *            	|
-| Titel                  	| Title                   	| {% raw %}{{title}}{% endraw %}               	|
+| Titel/Akademischer Grad	| Title/Academic Title     	| {% raw %}{{title}}{% endraw %}               	|
 | Funktion               	| Position                	| {% raw %}{{position}}{% endraw %}            	|
 | Telefon                	| Phone                   	| {% raw %}{{phone}}{% endraw %}               	|
 | Mobil                  	| Mobile                  	| {% raw %}{{mobile}}{% endraw %}              	|
