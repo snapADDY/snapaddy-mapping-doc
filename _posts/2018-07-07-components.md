@@ -80,4 +80,4 @@ It is only necessary to add a configuration here if you want to make a change to
 | `{% raw %}maxLength{% endraw %}`     | if the maxLength is exceeded, a popup notifies the user (field type `{% raw %}input{% endraw %}` only) |
 | `{% raw %}defaultValue{% endraw %}`  | `{% raw %}defaultValue{% endraw %}`, the `{% raw %}defaultValue{% endraw %}` will be inserted |
 | `{% raw %}locked{% endraw %}`        | field can not be modified, always uses the value received from the CRM |
-| `{% raw %}preventDisableEntity{% endRaw %}` | prevents to change the action of an entity. Disables the "create", "update" and "do not create" options |
+| `{% raw %}preventDisableEntity{% endraw %}` | prevents to change the action of an entity. Disables the "create", "update" and "do not create" options |
