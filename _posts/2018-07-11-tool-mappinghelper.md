@@ -9,4 +9,4 @@ You can get your copy here: [Download](https://github.com/snapADDY/snapaddy-mapp
 
 You will need an API Key to use the Mapping Helper. To get yours, go to your [profile settings](https://app.snapaddy.com/profile-update) and scroll down to API Token to generate one.
 
-**The Mapping Helper is currently only supported for Windows operationg systems.*
+**The Mapping Helper is currently only supported for Windows operating systems.*
