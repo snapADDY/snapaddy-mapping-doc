@@ -7,7 +7,7 @@ permalink: workflows
 The "workflows"-section determines the entities which should be created when exporting. Here is also defined in which entity the attachments like bcImage (Businesscard image) or Note should be attached to.
 
 
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
   "workflows": {
     "lead": [

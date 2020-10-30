@@ -9,7 +9,7 @@ Follow-up mails can be triggered either by exporting reports from the app or by 
 It is also possible to define conditions that have to be fulfilled for the follow-up mail to be sent.
 
 Examples:
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
   "integrations": {
     "notifications": {
@@ -56,7 +56,7 @@ Examples:
   }
 }
 {% endraw %}{% endhighlight %}
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
   "integrations": {
     "notifications": {

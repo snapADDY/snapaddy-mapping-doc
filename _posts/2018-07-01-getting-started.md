@@ -17,7 +17,7 @@ Inside defaultExport and visitreport there are 3 more blocks:
 - "workflows": Sets up the entities which are created at the export to your CRM system
 - "components": Configures the appearance of the Export 2.0 view.
 
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
     "integrations": {
         "salesforce": {

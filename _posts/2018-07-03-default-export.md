@@ -8,7 +8,7 @@ permalink: default-export
 The "defaultExport"-section determines all export-settings regarding the snapADDY Grabber.
 For more details have a look at [mappings](), [workflows]() and [components]()
 
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
       "defaultExport": {
             "mappings": {},

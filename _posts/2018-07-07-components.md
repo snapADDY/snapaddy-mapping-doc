@@ -8,7 +8,7 @@ The "components"-section determines the view of the export modal. You can hide f
 It is only necessary to add a configuration here if you want to make a change to the default setting.
 
 
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
   "lead": [
     {

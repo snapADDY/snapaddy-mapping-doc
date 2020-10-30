@@ -8,7 +8,7 @@ permalink: visitreport
 The "visitreport"-section determines all export-settings regarding snapADDY VisitReport.
 For more details have a look at [mappings](), [workflows]() and [components]()
 
-{% highlight json %}{% raw %}
+{% highlight javascript %}{% raw %}
 {
       "visitReport": {
             "mappings": {
