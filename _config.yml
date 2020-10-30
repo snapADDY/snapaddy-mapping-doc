@@ -32,7 +32,6 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
-  - github-pages
 
 kramdown:
   smart_quotes: apos,apos,quot,quot
