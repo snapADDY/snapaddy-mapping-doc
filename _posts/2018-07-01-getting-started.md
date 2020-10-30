@@ -7,7 +7,6 @@ permalink: getting-started
 To use snapADDY Grabber & VisitReport in connection to your CRM system in the most convinient way a CRM mapping has to be done.
 
 The CRM mapping consists of one .json file which determines the following settings:
-- "customFields": Adds custom fields to the Grabber UI
 - "meta": Information about how your entities are named
 - "defaultExport": snapADDY Grabber mapping
 - "visitreport": snapADDY Visitreport mapping
@@ -20,7 +19,6 @@ Inside defaultExport and visitreport there are 3 more blocks:
 
 {% highlight json %}{% raw %}
 {
-    "customFields": [],
     "integrations": {
         "salesforce": {
             "meta": {},
