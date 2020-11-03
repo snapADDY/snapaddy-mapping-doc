@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Mapping samples"
-date:   2018-07-20 14:21:18 +0200
+date:   2018-07-01 14:21:17 +0200
 permalink: mapping-samples
 ---
 The mapping samples contain the configuration for both our products, snapADDY Grabber and snapADDY VisitReport.

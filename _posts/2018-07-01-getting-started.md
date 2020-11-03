@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Getting started"
-date:   2018-07-01 14:21:18 +0200
+date:   2018-07-01 14:21:16 +0200
 permalink: getting-started
 ---
 To use snapADDY Grabber & VisitReport in connection to your CRM system in the most convinient way a CRM mapping has to be done.
