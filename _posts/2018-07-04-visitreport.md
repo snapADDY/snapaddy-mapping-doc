@@ -3,6 +3,7 @@ layout: post
 title:  "Section: visitreport"
 date:   2018-07-04 14:21:18 +0200
 permalink: visitreport
+published: false
 ---
 
 The "visitreport"-section determines all export-settings regarding snapADDY VisitReport.

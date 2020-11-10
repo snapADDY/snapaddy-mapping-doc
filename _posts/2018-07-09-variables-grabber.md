@@ -3,6 +3,7 @@ layout: post
 title: "Variables: Grabber & VisitReport"
 date: 2018-07-08 14:21:18 +0200
 permalink: variables-grabber
+published: false
 ---
 This is a list of the available fields in the Grabber and their corresponding variables for the mapping. This is very useful as there are special fields for the different CRMs. However, there are some default fields that are availabe for all CRMs. Fields that are marked with a star (*) have some special behaviour and are listed in a additional table below.
 
