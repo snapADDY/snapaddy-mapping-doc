@@ -3,6 +3,7 @@ layout: post
 title: "Section: components"
 date: 2018-07-06 14:21:18 +0200
 permalink: components
+published: false
 ---
 The "components"-section determines the view of the export modal. You can hide fields, make them mandatory, lock them or set a maximum field length.
 It is only necessary to add a configuration here if you want to make a change to the default setting.
