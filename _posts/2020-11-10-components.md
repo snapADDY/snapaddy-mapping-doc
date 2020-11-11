@@ -7,6 +7,8 @@ permalink: components
 
 The "**components**"-section determines the view of the export modal. You can hide fields, make them mandatory, lock them or set a maximum field length. It is only necessary to add a configuration here if you want to make a change to the default setting.
 
+The components for a basic mapping are already predetermined and can be copied [here](https://github.com/snapADDY/snapaddy-mapping-samples/tree/master/components)
+
 Note:
 1.  The order of the fields contained in components represents the order of the fields in the snapADDY ExportView
 2. Fields that are not included in "components" will appear at the top of the Export View
