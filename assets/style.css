@@ -103,11 +103,11 @@ body {
 @media (min-width: 720px) {
   .grid {
     overflow: hidden;
-    margin-left: -60px;
+    /* margin-left: -60px; */
   }
 
   .grid .item {
-    padding-left: 60px;
+    /* padding-left: 60px; */
     display: inline-block;
     width: 50%;
     vertical-align: top;
