@@ -408,7 +408,8 @@ Special default fields
   {{ country }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the Country ISO Codes [ISO-3166-1-Kodierliste – Wikipedia](https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste)
+  the Grabber automatically grabs the 
+  <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">Country ISO Codes</a>
   e.g.: "DE" is grabbed for german addresses 
 </td>
 </tr>
@@ -418,8 +419,7 @@ Special default fields
   {{ state }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the State ISO Codes [ISO 3166-2:DE - Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-2:DE)
-  e.g.: "BY" is grabbed for bavarian addresses 
+  the Grabber automatically grabs the <a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">State ISO Codes</a>
 </td>
 </tr>
 
@@ -440,6 +440,15 @@ Special default fields
 <td style="max-width: 100px;padding-bottom: 0px;">
   return the first and last name of the user signed in to the grabber
   e.g. "Rico Hahn"
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ industry }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  the Grabber automatically grabs the <a href="https://developers.snapaddy.com/grabber-rest-api/guides/industry-codes">industry Codes</a>
 </td>
 </tr>
 
