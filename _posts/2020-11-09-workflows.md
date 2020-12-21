@@ -24,55 +24,59 @@ Additional entities (that do not exist in the CRM System by default) can be crea
 <td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 "workflows":{
-  "CRMentity": [
-    {
-      "entity": "CRMentity"
-    },
-    {
-      "entity": "newEntity",
-      "dependsOn":[
-        {
-          "field": "newFieldName",
-          "entity": "CRMentity"
-        }
-      ]
-    }
-    ...
-  ]
+  "*": {
+    "CRMentity": [
+      {
+        "entity": "CRMentity"
+      },
+      {
+        "entity": "newEntity",
+        "dependsOn":[
+          {
+            "field": "newFieldName",
+            "entity": "CRMentity"
+          }
+        ]
+      }
+      ...
+    ]
+  }
 }
 {% endraw %}{% endhighlight %}
 </td>
 <td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 "workflows": {
-  "lead": [
-    {
-      "entity": "lead"
-    },
-    {
-      "entity": "campaignMember",
-      "dependsOn": [
-        {
-          "field": "LeadId",
-          "entity": "lead"
-        }
-      ]
-    }
-  ],
-  "contact_account": [
-    {
-      "entity": "account"
-    },
-    {
-      "entity": "campaignMember",
-      "dependsOn": [
-        {
-          "field": "ContactID",
-          "entity": "contact"
-        }
-      ]
-    }
-  ]
+  "*": {
+     "lead": [
+      {
+        "entity": "lead"
+      },
+      {
+        "entity": "campaignMember",
+        "dependsOn": [
+          {
+            "field": "LeadId",
+            "entity": "lead"
+          }
+        ]
+      }
+    ],
+    "contact_account": [
+      {
+        "entity": "account"
+      },
+      {
+        "entity": "campaignMember",
+        "dependsOn": [
+          {
+            "field": "ContactID",
+            "entity": "contact"
+          }
+        ]
+      }
+    ]
+  }
 }
 {% endraw %}{% endhighlight %}
 </td>

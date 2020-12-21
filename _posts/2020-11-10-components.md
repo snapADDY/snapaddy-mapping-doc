@@ -33,101 +33,105 @@ Note:
 <td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 {
-  "entity": [
-    {
-      "type": "entity",
-      "duplicateCheckName": "entity",
-      "label": {
-        "en": "entityLabel",
-        "de": "entityLabel"
-      },
-      "fields": {
-        "FieldName": {
-          "id": "FieldName",
-          "type": "input",
-          "label": {
-            "en": "FieldLabel",
-            "de": "FieldLabel"
-          },
-          "properties": {
-            "property1": "value1",
-            "property2": "value2"
+  "*": {
+     "entity": [
+      {
+        "type": "entity",
+        "duplicateCheckName": "entity",
+        "label": {
+          "en": "entityLabel",
+          "de": "entityLabel"
+        },
+        "fields": {
+          "FieldName": {
+            "id": "FieldName",
+            "type": "input",
+            "label": {
+              "en": "FieldLabel",
+              "de": "FieldLabel"
+            },
+            "properties": {
+              "property1": "value1",
+              "property2": "value2"
+            }
           }
-        }
-      },
-      "search": {
-        "ids": [
-          "FullName"
-        ]
-      },
-      "mainTemplate": "{{ MainTemplate }}",
-      "detailsTemplate": "{{ DetailsTemlate }}"
-    }
-  ]
+        },
+        "search": {
+          "ids": [
+            "FullName"
+          ]
+        },
+        "mainTemplate": "{{ MainTemplate }}",
+        "detailsTemplate": "{{ DetailsTemlate }}"
+      }
+    ]
+  }
 }
 {% endraw %}{% endhighlight %}
 </td>
 <td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 {
-  "lead": [
-     {
-       "type": "lead",
-       "duplicateCheckName": "lead",
-       "label": {
-          "en": "Lead",
-          "de": "Lead"
-        },
-        "fields": {
-          "LeadId": {
-            "id": "LeadId",
-            "type": "input",
-            "label": {
-              "en": "LeadId",
-              "de": "LeadId"
+  "*": {
+     "lead": [
+        {
+          "type": "lead",
+          "duplicateCheckName": "lead",
+          "label": {
+              "en": "Lead",
+              "de": "Lead"
             },
-            "properties": {
-              "hidden": true,
-              "identifier": true
-             }
-          },
-          "Newsletter": {
-            "id": "Newsletter",
-            "type": "select",
-            "label": {
-               "en": "Newsletter",
-               "de": "Newsletter"
-            },
-            "properties": {
-               "options": [
-                   {
-                      "label": {
-                          "de": "Ja",
-                          "en": "Yes"
-                        },
-                        "value": "Yes"
-                      },
-                      {
-                        "label": {
-                           "de": "Nein",
-                           "en": "No"
-                         },
-                         "value": "No"
-                      }
-                    ]
-                  }
+            "fields": {
+              "LeadId": {
+                "id": "LeadId",
+                "type": "input",
+                "label": {
+                  "en": "LeadId",
+                  "de": "LeadId"
+                },
+                "properties": {
+                  "hidden": true,
+                  "identifier": true
                 }
+              },
+              "Newsletter": {
+                "id": "Newsletter",
+                "type": "select",
+                "label": {
+                  "en": "Newsletter",
+                  "de": "Newsletter"
+                },
+                "properties": {
+                  "options": [
+                      {
+                          "label": {
+                              "de": "Ja",
+                              "en": "Yes"
+                            },
+                            "value": "Yes"
+                          },
+                          {
+                            "label": {
+                              "de": "Nein",
+                              "en": "No"
+                            },
+                            "value": "No"
+                          }
+                        ]
+                      }
+                    }
+                },
+                "search": {
+                  "ids": [
+                      "FullName"
+                    ]
             },
-            "search": {
-               "ids": [
-                  "FullName"
-                ]
-        },
-      "mainTemplate": "{{ FirstName }} {{ LastName }}",
-      "detailsTemplate": "{{ CompanyName }}",
-      "preventDisableEntity": false
-    }
-  ]
+          "mainTemplate": "{{ FirstName }} {{ LastName }}",
+          "detailsTemplate": "{{ CompanyName }}",
+          "preventDisableEntity": false
+        }
+      ]
+  }
 }
 {% endraw %}{% endhighlight %}
 </td>

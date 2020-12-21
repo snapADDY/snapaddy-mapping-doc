@@ -10,8 +10,14 @@ An empty defaultExport looks like this:
 
 {% highlight javascript %}{% raw %}
 "defaultExport": {
-  "mappings": {},
-  "workflows": {},
-  "components": {}
+    "mappings": {
+        "*": {}
+    },
+    "workflows": {
+        "*": {}
+    },
+    "components": {
+        "*": {}
+    }
 }
 {% endraw %}{% endhighlight %}

@@ -283,7 +283,7 @@ snapADDY provides a set of pre-defined **variables** which allow you to make map
   Industry
 </td>
 <td style="max-width: 100px;">
-  {{ industry }}
+  {{ industry }} * 
 </td>
 </tr>
 
@@ -442,6 +442,8 @@ Special default fields
   e.g. "Rico Hahn"
 </td>
 </tr>
+
+
 
 </tbody>
 </table>
