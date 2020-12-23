@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Section: documentation"
-date:   2020-11-10 09:47:26 +0200
+date:   2020-11-12 09:47:26 +0200
 permalink: documentation
 ---
 
