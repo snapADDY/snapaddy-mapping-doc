@@ -5,7 +5,7 @@ date:   2020-11-06 09:47:21 +0200
 permalink: visitReport
 ---
 
-The "**visitReport**"-section determines all export-settings regarding the **snapADDY VisitReport**. 
+The "<b>visitReport</b>"-section determines all export-settings regarding the <b>snapADDY VisitReport</b>. 
 An empty visitReport looks like this (Notice the "*"):
 
 {% highlight javascript %}{% raw %}
@@ -28,9 +28,7 @@ This is a list of the available variables used in the VisitReport mapping.
 
 You can create multiple mappings for different templates by exchanging the "*", which is a variable for "applies to all templates", with the MappingId of the desired template
 
-The MappingIDs, aswell as the QuestionId can be found using the [Mapping Helper](https://github.com/snapADDY/snapaddy-mapping-doc/raw/master/files/MappingHelper.zip)
-
-
+The MappingIDs, aswell as the QuestionId can be found using the<a href="https://github.com/snapADDY/snapaddy-mapping-doc/raw/master/files/MappingHelper.zip">Mapping Helper</a>
 
 
 

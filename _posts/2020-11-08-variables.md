@@ -4,10 +4,15 @@ title:  "Section: variables"
 date:   2020-11-09 09:47:22 +0200
 permalink: variables
 ---
-snapADDY provides a set of pre-defined **variables** which allow you to make mappings more flexible. Mapping variables represent standard recurring values, such as first name or email address, that you can map to the corresponding fields in your CRM system
+
+
+snapADDY provides a set of pre-defined <b>variables</b> which allow you to make mappings more flexible. Mapping variables represent standard recurring values, such as first name or email address, that you can map to the corresponding fields in your CRM system
 
 
 {% raw %}
+
+
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -373,13 +378,11 @@ snapADDY provides a set of pre-defined **variables** which allow you to make map
 
 </tbody>
 <table>
-{% endraw %}
 
 
 
 Special default fields
 
-{% raw %}
 <table>
 <colgroup>
 <col width="25%" />
@@ -456,6 +459,9 @@ Special default fields
 
 </tbody>
 </table>
-{% endraw %}
 
-**parseStreet** is an internal function that can be used to differ between the housenumber and the street name. It parses the given information and returns an object with the two attributes street and number.
+<b>parseStreet</b> is an internal function that can be used to differ between the housenumber and the street name. It parses the given information and returns an object with the two attributes street and number.
+
+
+
+{% endraw %}
