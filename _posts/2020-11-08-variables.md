@@ -4,10 +4,15 @@ title:  "Section: variables"
 date:   2020-11-09 09:47:22 +0200
 permalink: variables
 ---
-snapADDY provides a set of pre-defined **variables** which allow you to make mappings more flexible. Mapping variables represent standard recurring values, such as first name or email address, that you can map to the corresponding fields in your CRM system
+
+
+snapADDY provides a set of pre-defined <b>variables</b> which allow you to make mappings more flexible. Mapping variables represent standard recurring values, such as first name or email address, that you can map to the corresponding fields in your CRM system
 
 
 {% raw %}
+
+
+
 <table>
 <colgroup>
 <col width="33%" />
@@ -283,7 +288,7 @@ snapADDY provides a set of pre-defined **variables** which allow you to make map
   Industry
 </td>
 <td style="max-width: 100px;">
-  {{ industry }}
+  {{ industry }} * 
 </td>
 </tr>
 
@@ -373,13 +378,11 @@ snapADDY provides a set of pre-defined **variables** which allow you to make map
 
 </tbody>
 <table>
-{% endraw %}
 
 
 
 Special default fields
 
-{% raw %}
 <table>
 <colgroup>
 <col width="25%" />
@@ -408,7 +411,8 @@ Special default fields
   {{ country }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the Country ISO Codes [ISO-3166-1-Kodierliste – Wikipedia](https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste)
+  the Grabber automatically grabs the 
+  <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">Country ISO Codes</a>
   e.g.: "DE" is grabbed for german addresses 
 </td>
 </tr>
@@ -418,8 +422,7 @@ Special default fields
   {{ state }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the State ISO Codes [ISO 3166-2:DE - Wikipedia](https://en.wikipedia.org/wiki/ISO_3166-2:DE)
-  e.g.: "BY" is grabbed for bavarian addresses 
+  the Grabber automatically grabs the <a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">State ISO Codes</a>
 </td>
 </tr>
 
@@ -443,8 +446,22 @@ Special default fields
 </td>
 </tr>
 
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ industry }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  the Grabber automatically grabs the <a href="https://developers.snapaddy.com/grabber-rest-api/guides/industry-codes">industry Codes</a>
+</td>
+</tr>
+
+
+
 </tbody>
 </table>
-{% endraw %}
 
-**parseStreet** is an internal function that can be used to differ between the housenumber and the street name. It parses the given information and returns an object with the two attributes street and number.
+<b>parseStreet</b> is an internal function that can be used to differ between the housenumber and the street name. It parses the given information and returns an object with the two attributes street and number.
+
+
+
+{% endraw %}

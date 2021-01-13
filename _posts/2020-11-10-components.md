@@ -5,7 +5,9 @@ date:   2020-11-10 09:47:24 +0200
 permalink: components
 ---
 
-The "**components**"-section determines the view of the export modal. You can hide fields, make them mandatory, lock them or set a maximum field length. It is only necessary to add a configuration here if you want to make a change to the default setting.
+The "<b>components</b>"-section determines the view of the export modal. You can hide fields, make them mandatory, lock them or set a maximum field length. It is only necessary to add a configuration here if you want to make a change to the default setting.
+
+The components for a basic mapping are already predetermined and can be copied <a href="https://github.com/snapADDY/snapaddy-mapping-samples/tree/master/components">here</a>
 
 Note:
 1.  The order of the fields contained in components represents the order of the fields in the snapADDY ExportView
@@ -31,101 +33,105 @@ Note:
 <td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 {
-  "entity": [
-    {
-      "type": "entity",
-      "duplicateCheckName": "entity",
-      "label": {
-        "en": "entityLabel",
-        "de": "entityLabel"
-      },
-      "fields": {
-        "FieldName": {
-          "id": "FieldName",
-          "type": "input",
-          "label": {
-            "en": "FieldLabel",
-            "de": "FieldLabel"
-          },
-          "properties": {
-            "property1": "value1",
-            "property2": "value2"
+  "*": {
+     "entity": [
+      {
+        "type": "entity",
+        "duplicateCheckName": "entity",
+        "label": {
+          "en": "entityLabel",
+          "de": "entityLabel"
+        },
+        "fields": {
+          "FieldName": {
+            "id": "FieldName",
+            "type": "input",
+            "label": {
+              "en": "FieldLabel",
+              "de": "FieldLabel"
+            },
+            "properties": {
+              "property1": "value1",
+              "property2": "value2"
+            }
           }
-        }
-      },
-      "search": {
-        "ids": [
-          "FullName"
-        ]
-      },
-      "mainTemplate": "{{ MainTemplate }}",
-      "detailsTemplate": "{{ DetailsTemlate }}"
-    }
-  ]
+        },
+        "search": {
+          "ids": [
+            "FullName"
+          ]
+        },
+        "mainTemplate": "{{ MainTemplate }}",
+        "detailsTemplate": "{{ DetailsTemlate }}"
+      }
+    ]
+  }
 }
 {% endraw %}{% endhighlight %}
 </td>
 <td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 {
-  "lead": [
-     {
-       "type": "lead",
-       "duplicateCheckName": "lead",
-       "label": {
-          "en": "Lead",
-          "de": "Lead"
-        },
-        "fields": {
-          "LeadId": {
-            "id": "LeadId",
-            "type": "input",
-            "label": {
-              "en": "LeadId",
-              "de": "LeadId"
+  "*": {
+     "lead": [
+        {
+          "type": "lead",
+          "duplicateCheckName": "lead",
+          "label": {
+              "en": "Lead",
+              "de": "Lead"
             },
-            "properties": {
-              "hidden": true,
-              "identifier": true
-             }
-          },
-          "Newsletter": {
-            "id": "Newsletter",
-            "type": "select",
-            "label": {
-               "en": "Newsletter",
-               "de": "Newsletter"
-            },
-            "properties": {
-               "options": [
-                   {
-                      "label": {
-                          "de": "Ja",
-                          "en": "Yes"
-                        },
-                        "value": "Yes"
-                      },
-                      {
-                        "label": {
-                           "de": "Nein",
-                           "en": "No"
-                         },
-                         "value": "No"
-                      }
-                    ]
-                  }
+            "fields": {
+              "LeadId": {
+                "id": "LeadId",
+                "type": "input",
+                "label": {
+                  "en": "LeadId",
+                  "de": "LeadId"
+                },
+                "properties": {
+                  "hidden": true,
+                  "identifier": true
                 }
+              },
+              "Newsletter": {
+                "id": "Newsletter",
+                "type": "select",
+                "label": {
+                  "en": "Newsletter",
+                  "de": "Newsletter"
+                },
+                "properties": {
+                  "options": [
+                      {
+                          "label": {
+                              "de": "Ja",
+                              "en": "Yes"
+                            },
+                            "value": "Yes"
+                          },
+                          {
+                            "label": {
+                              "de": "Nein",
+                              "en": "No"
+                            },
+                            "value": "No"
+                          }
+                        ]
+                      }
+                    }
+                },
+                "search": {
+                  "ids": [
+                      "FullName"
+                    ]
             },
-            "search": {
-               "ids": [
-                  "FullName"
-                ]
-        },
-      "mainTemplate": "{{ FirstName }} {{ LastName }}",
-      "detailsTemplate": "{{ CompanyName }}",
-      "preventDisableEntity": false
-    }
-  ]
+          "mainTemplate": "{{ FirstName }} {{ LastName }}",
+          "detailsTemplate": "{{ CompanyName }}",
+          "preventDisableEntity": false
+        }
+      ]
+  }
 }
 {% endraw %}{% endhighlight %}
 </td>
@@ -177,7 +183,7 @@ Free text input
 select
 </td>
 <td style="max-width: 100px;vertical-align: initial;;">
-**One** option **can** be selected.
+<b>One</b> option <b>can</b> be selected.
 Note: By default the options will be fetched from the FieldDefinitions, unless they are overwritten in the properties of that component. When overwriting the option, watch out that the values match with the fieldDefinitions
 </td>
 <td style="max-width: 100px;vertical-align: initial;;">
@@ -219,7 +225,7 @@ Note: By default the options will be fetched from the FieldDefinitions, unless t
 multiselect
 </td>
 <td style="max-width: 100px;vertical-align: initial;;">
-**Multiple** options **can** be selected
+<b>Multiple</b> options <b>can</b> be selected
 Note: By default the options will be fetched from the fieldDefinitions, unless they are overwritten by the properties of that component. When overwriting the option, watch out that the values match with the fieldDefinitions
 </td>
 <td style="max-width: 100px;vertical-align: initial;;">

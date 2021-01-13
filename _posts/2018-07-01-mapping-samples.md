@@ -11,4 +11,4 @@ If you are using only one of our products you can delete the section in the mapp
 snapADDY Grabber is mapped in the "defaultExport"-section.  
 snapADDY VisitReport is mapped in the "visitreport"-section.
 
-[snapADDY Mapping Samples](https://github.com/snapADDY/snapaddy-mapping-samples/tree/master)
+<a href="https://github.com/snapADDY/snapaddy-mapping-samples/tree/master">snapADDY Mapping Samples</a>
