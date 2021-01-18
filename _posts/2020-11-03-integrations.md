@@ -5,7 +5,7 @@ date:   2020-11-03 09:47:18 +0200
 permalink: integrations
 ---
 
-The <b>integration</b> is the connection between the data from the <b>snapADDY Grabber</b>, <b>CardScanner</b> or <b>VisitReport</b> and your CRM system.
+The **integration** is the connection between the data from the **snapADDY Grabber**, **CardScanner** or **VisitReport** and your CRM system.
 
 An empty integration for Grabber- and VisitReport-Export looks like this:
 
@@ -24,21 +24,7 @@ An empty integration for Grabber- and VisitReport-Export looks like this:
 }
 {% endraw %}{% endhighlight %}
 
-Multiple connections to different CRM systems can be included in one mapping document, just **separate** them by using a comma:
-
-
-<figure class="highlight">
-<pre>
-<code class="language-javascript" data-lang="javascript">
-  "integrations": {
-    "CRM_System_NameA": {
-    },
-    "CRM_System_NameB": {
-    }
-  }
-</code>
-</pre>
-</figure>
+Multiple connections to different CRM systems can be included in one mapping document, just separate them by using a comma:
 
 {% highlight javascript %}{% raw %}
 "integrations": {
@@ -51,5 +37,5 @@ Multiple connections to different CRM systems can be included in one mapping doc
 
 
 
-It is  best to start a new mapping by inserting the corresponding <a href="https://github.com/snapADDY/snapaddy-mapping-samples/tree/master">mapping sample</a>) into the integrations branch. This creates a basic valid mapping and may help understanding the syntax. "<i>meta</i>", "<i>defaultExport</i>", "<i>visitReport</i>" and "<i>code</i>" are included, even if parts are not used, it does not affect the rest of the mapping.
-Now the mapping can be adapted by adding, removing or changing the entities and fields. More on that in "<i>mappings</i>".
+It is  best to start a new mapping by inserting the corresponding [mapping sample](https://github.com/snapADDY/snapaddy-mapping-samples/tree/master) into the integrations branch. This creates a basic valid mapping and may help understanding the syntax. "*meta*", "*defaultExport*", "*visitReport*" and "*code*" are included, even if parts are not used, it does not affect the rest of the mapping.
+Now the mapping can be adapted by adding, removing or changing the entities and fields. More on that in "*mappings*".

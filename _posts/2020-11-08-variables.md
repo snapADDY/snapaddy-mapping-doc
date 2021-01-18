@@ -288,7 +288,7 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
   Industry
 </td>
 <td style="max-width: 100px;">
-  {{ industry }}* 
+  {{ industry }} * 
 </td>
 </tr>
 
