@@ -24,21 +24,7 @@ An empty integration for Grabber- and VisitReport-Export looks like this:
 }
 {% endraw %}{% endhighlight %}
 
-Multiple connections to different CRM systems can be included in one mapping document, just **separate** them by using a comma:
-
-
-<figure class="highlight">
-<pre>
-<code class="language-javascript" data-lang="javascript">
-  "integrations": {
-    "CRM_System_NameA": {
-    },
-    "CRM_System_NameB": {
-    }
-  }
-</code>
-</pre>
-</figure>
+Multiple connections to different CRM systems can be included in one mapping document, just <b>separate</b> them by using a comma:
 
 {% highlight javascript %}{% raw %}
 "integrations": {
