@@ -230,10 +230,13 @@ a:visited {
  * CONTENT
  */
 
-/* .content {
-  background: #fff;
-  padding: 20px;
-} */
+ /*test*/
+
+.content {
+  /* background: #fff; */
+  margin-top: 4em;
+}
+ 
 
 .post-list-heading {
   font-size: 35px;
