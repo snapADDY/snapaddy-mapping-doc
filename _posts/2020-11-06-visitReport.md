@@ -28,7 +28,7 @@ This is a list of the available variables used in the VisitReport mapping.
 
 You can create multiple mappings for different templates by exchanging the "*", which is a variable for "applies to all templates", with the MappingId of the desired template
 
-The MappingIDs, aswell as the QuestionId can be found using the <a href="https://github.com/snapADDY/snapaddy-mapping-doc/raw/master/files/MappingHelper.zip">Mapping Helper</a>
+<h4><b>The MappingIDs, aswell as the QuestionId can be found using the <a href="https://github.com/snapADDY/snapaddy-mapping-doc/raw/master/files/MappingHelper.zip">Mapping Helper</a></b></h4>
 
 
 
@@ -60,10 +60,19 @@ The answer of the referenced
 
 <tr>
 <td style="vertical-align: initial; vertical-align: initial;">
-visitreport.result['QUESTIONID']
+visitreport.title
 </td>
 <td style="vertical-align: initial; vertical-align: initial;">
-Object containing more detailed information about questions + answers
+The title of the visitreport
+</td>
+</tr>
+
+<tr>
+<td style="vertical-align: initial; vertical-align: initial;">
+visitreport.campaignId
+</td>
+<td style="vertical-align: initial; vertical-align: initial;">
+The campaign ID entered in the template settings
 </td>
 </tr>
 
