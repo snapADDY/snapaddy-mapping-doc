@@ -399,7 +399,7 @@ Special default fields
   {{ gender }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  depends on the salutation-field in the grabber<br>
+  depends on the salutation-field in the DataQuality<br>
   returns -1 when nothing is selected<br>
   returns 0 when male salutation is selected (DE: "Herr"; EN: "Mr.")<br>
   returns 1 when female salutation is selected (DE: "Frau"; EN: "Ms.")
@@ -411,7 +411,7 @@ Special default fields
   {{ country }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the 
+  the DataQuality automatically grabs the 
   <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">Country ISO Codes</a>
   e.g.: "DE" is grabbed for german addresses 
 </td>
@@ -422,7 +422,7 @@ Special default fields
   {{ state }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the <a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">State ISO Codes</a>
+  the DataQuality automatically grabs the <a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">State ISO Codes</a>
 </td>
 </tr>
 
@@ -431,7 +431,7 @@ Special default fields
   {{ createdBy }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  returns the e-mail address of the user signed in to the grabber
+  returns the e-mail address of the user signed in to the DataQuality
   e.g. "r.hahn@snapaddy.com"
 </td>
 </tr>
@@ -441,7 +441,7 @@ Special default fields
   {{ createdByName }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  return the first and last name of the user signed in to the grabber
+  return the first and last name of the user signed in to the DataQuality
   e.g. "Rico Hahn"
 </td>
 </tr>
@@ -451,7 +451,7 @@ Special default fields
   {{ industry }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
+  the DataQuality automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
 </td>
 </tr>
 

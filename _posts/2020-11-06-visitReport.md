@@ -90,7 +90,7 @@ The campaign ID entered in the template settings
 visitreport.result['QUESTIONID'].question
 </td>
 <td style="vertical-align: initial; vertical-align: initial;">
-Question title in current grabber / export language
+Question title in current DataQuality / export language
 </td>
 </tr>
 
@@ -99,7 +99,7 @@ Question title in current grabber / export language
 visitreport.result['QUESTIONID'].title
 </td>
 <td style="vertical-align: initial; vertical-align: initial;">
-Defined option label in current grabber / export language
+Defined option label in current DataQuality / export language
 </td>
 </tr>
 
@@ -144,7 +144,7 @@ More detailed information about the selected/answered options
 visitreport.result['QUESTIONID'].options['OPTIONID'].title
 </td>
 <td style="vertical-align: initial; vertical-align: initial;">
-Defined option label in current grabber/export language
+Defined option label in current DataQuality/export language
 </td>
 </tr>
 
