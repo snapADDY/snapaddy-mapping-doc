@@ -451,7 +451,7 @@ Special default fields
   {{ industry }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the Grabber automatically grabs the <a href="https://developers.snapaddy.com/grabber-rest-api/guides/industry-codes">industry Codes</a>
+  the Grabber automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
 </td>
 </tr>
 
