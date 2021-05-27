@@ -42,10 +42,10 @@ Examples:
                     },
                     {
                         "label": {
-                            "DE": "snapADDY Grabber",
-                            "GB": "snapADDY Grabber"
+                            "DE": "snapADDY DataQuality",
+                            "GB": "snapADDY DataQuality"
                         },
-                        "value": "snapaddy_grabber"
+                        "value": "snapaddy_dataQuality"
                     },
                               {
                         "label": {
