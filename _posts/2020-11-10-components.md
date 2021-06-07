@@ -343,6 +343,59 @@ checkbox
 </tbody>
 </table>
 
+detailsLabel add a description to the field. The whole description is visible when cursor hovers over the field. Language specific labels can be set.
+<table>
+<colgroup>
+<col width="15%" />
+<col width="25%" />
+</colgroup>
+<tr class="header">
+<th>Syntax</th>
+<th>Example</th>
+</tr>
+
+<tbody>
+<tr>
+<td style="max-width: 100px;vertical-align: initial;">
+{% highlight javascript %}{% raw %}
+{
+    "field":{
+      "id":"field",
+      "type":"type",
+      "label":{
+        "en":"FieldLabel",
+        "de":"FieldLabel"
+      },
+      "detailsLabel": {
+        "en": "DetailsLabel",
+        "de": "DetailsLabel"
+      }
+    }
+}
+{% endraw %}{% endhighlight %}
+</td>
+<td style="max-width: 100px;vertical-align: initial;">
+{% highlight javascript %}{% raw %}
+{
+    "ContactFirstName":{
+      "id":"ContactFirstName",
+      "type":"input",
+      "label":{
+        "en":"FirstName",
+        "de":"Vorname"
+      },
+      "detailsLabel": {
+        "en": "The First Name of the contact",
+        "de": "Der Vorname des Kontaktes"
+      }
+    }
+}
+{% endraw %}{% endhighlight %}
+</td>
+</tr>
+
+</tbody>
+</table>
 
 List with all available properties: 
 <table>
@@ -382,6 +435,7 @@ identifier
 Value will always be sent, even if not modified
 </td>
 </tr>
+
 <tr>
 <td style="max-width: 100px;vertical-align: initial;;">
 maxLength
@@ -390,15 +444,16 @@ maxLength
 Id the maxLength is exceeded, a popup notifies the user (field type input only)
 </td>
 </tr>
+
 <tr>
 <td style="max-width: 100px;vertical-align: initial;;">
 defaultValue
 </td>
 <td style="max-width: 100px;vertical-align: initial;;">
 defaultValue, the defaultValue will be exported
-
 </td>
 </tr>
+
 <tr>
 <td style="max-width: 100px;vertical-align: initial;;">
 locked
