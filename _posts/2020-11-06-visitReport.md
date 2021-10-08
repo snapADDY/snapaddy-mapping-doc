@@ -78,15 +78,6 @@ The campaign ID entered in the template settings
 
 <tr>
 <td style="vertical-align: initial; vertical-align: initial;">
-visitreport.campaignId
-</td>
-<td style="vertical-align: initial; vertical-align: initial;">
-The campaign ID entered in the template settings
-</td>
-</tr>
-
-<tr>
-<td style="vertical-align: initial; vertical-align: initial;">
 visitreport.result['QUESTIONID'].question
 </td>
 <td style="vertical-align: initial; vertical-align: initial;">
