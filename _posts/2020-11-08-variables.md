@@ -342,30 +342,6 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
 
 <tr>
 <td style="max-width: 100px;">
-  nicht sichtbar
-</td>
-<td style="max-width: 100px;">
-  not visible
-</td>
-<td style="max-width: 100px;">
-  {{ createdBy }}*
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;">
-  nicht sichtbar
-</td>
-<td style="max-width: 100px;">
-  not visible
-</td>
-<td style="max-width: 100px;">
-  {{ createdByName }}*
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;">
   Report ID
 </td>
 <td style="max-width: 100px;">
@@ -428,11 +404,19 @@ Special default fields
 
 <tr>
 <td style="max-width: 100px;padding-bottom: 0px;">
+  {{ industry }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  the DataQuality automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
   {{ createdBy }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  returns the e-mail address of the user signed in to the DataQuality
-  e.g. "r.hahn@snapaddy.com"
+  returns the e-mail address of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "r.hahn@snapaddy.com"
 </td>
 </tr>
 
@@ -441,20 +425,27 @@ Special default fields
   {{ createdByName }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  return the first and last name of the user signed in to the DataQuality
-  e.g. "Rico Hahn"
+  returns the first and last name of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "Rico Hahn"
 </td>
 </tr>
 
 <tr>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  {{ industry }}
+  {{ crmUserId }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
+  returns the CRM user id of the user signed in to DataQuality/creator of a VisitReport<br>must be set in the user management settings
 </td>
 </tr>
 
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ crmUsername }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the CRM user name of the user signed in to DataQuality/creator of a VisitReport<br>must be set in the user management settings
+</td>
+</tr>
 
 
 </tbody>

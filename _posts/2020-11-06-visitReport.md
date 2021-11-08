@@ -28,7 +28,7 @@ This is a list of the available variables used in the VisitReport mapping.
 
 You can create multiple mappings for different templates by exchanging the "*", which is a variable for "applies to all templates", with the MappingId of the desired template
 
-<h4><b>The MappingIDs, aswell as the QuestionId can be found using the <a href="https://github.com/snapADDY/snapaddy-mapping-doc/raw/master/files/MappingHelper.zip">Mapping Helper</a></b></h4>
+<h4><b>The MappingIds, aswell as the QuestionId can be found using the <a href="https://github.com/snapADDY/snapaddy-mapping-doc/raw/master/files/MappingHelper.zip">Mapping Helper</a></b></h4>
 
 
 
