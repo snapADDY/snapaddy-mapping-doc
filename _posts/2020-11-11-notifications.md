@@ -121,7 +121,7 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
           "mappingId": {
             "actions": [
               {
-                "trigger": "created/checke",
+                "trigger": "created/checked",
                 "language": "de/en",
                 "condition": "{{ condition }}",
                 "details": [
