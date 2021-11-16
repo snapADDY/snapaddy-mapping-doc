@@ -25,8 +25,8 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
   "integrations": {
     "notifications": {
       "enabled": boolean,
-      "mapping": {
-        "defaultExport/visitreport": {
+      "visitreport": {
+        "mappings": {
           "mappingId": {
             "actions": [
               {
@@ -117,28 +117,30 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
     "notifications": {
       "enabled": boolean,
       "mapping": {
-        "defaultExport/visitreport": {
-          "mappingId": {
-            "actions": [
-              {
-                "trigger": "created/checked",
-                "language": "de/en",
-                "condition": "{{ condition }}",
-                "details": [
-                  {
-                    "type": "email/webhook",
-                    "subject": "subject",
-                    "content": "content",
-                    "attachments": [
-                      {
-                        "type": "visitreport_pdf",
-                        "name": "name"
-                      }
-                    ],
-                    "recipients": [
-                      "Email1",
-                      "Email2"
-                    ]
+        "visitreport": {
+          "mappings": {
+            "mappingId": {
+              "actions": [
+                {
+                  "trigger": "created/checked",
+                  "language": "de/en",
+                  "condition": "{{ condition }}",
+                  "details": [
+                    {
+                      "type": "email/webhook",
+                      "subject": "subject",
+                      "content": "content",
+                      "attachments": [
+                        {
+                          "type": "visitreport_pdf",
+                          "name": "name"
+                        }
+                      ],
+                      "recipients": [
+                        "Email1",
+                        "Email2"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -148,6 +150,7 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
       }
     }
   }
+}
 {% endraw %}{% endhighlight %}
 </td>
 <td style="max-width: 100px; vertical-align: initial;">
