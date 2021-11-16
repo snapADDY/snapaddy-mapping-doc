@@ -7,44 +7,55 @@ permalink: notifications
 
 In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" functionality. Follow-up mails can be triggered either by exporting reports from the app or by checking reports in the dashboard. It is also possible to define conditions that have to be fulfilled for the follow-up mail to be sent.
 
-Examples:
+<table>
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tr class="header">
+<th>Syntax</th>
+<th>Example</th>
+</tr>
 
+<tbody>
+<tr>
+<td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 {
   "integrations": {
     "notifications": {
-      "enabled": true,
-        "visitreport": {
+      "enabled": boolean,
+      "visitreport": {
         "mappings": {
-          "*": {
+          "mappingId": {
             "actions": [
               {
-                "trigger": "created",
-                "language": "en",
-                "condition": "{{ lastName === 'Müller' }}",
-                "details": [
+                "trigger": "created/checked",
+                "switch": "{{ variable }}",
+                "cases": [
                   {
-                    "type": "email",
-                    "subject": "Hello, {{ firstName }} {{ lastName }}",
-                    "content": "This is an email for you",
-                    "attachments": [{
-                      "type": "visitreport_pdf",
-                      "name": "Report from {{ firstName }} {{lastName}}"
-                    }],
-                    "recipients": ["hello@mueller.com"]
-                  }
-                ]
-              }, 
-              {
-                "trigger": "checked",
-                "language": "de",
-                "condition": "{{ lastName === 'Müller' }}",
-                "details": [
+                    "value": "Value1",
+                    "details": {
+                      "type": "email/webhook",
+                      "subject": "Text",
+                      "content": "Content",
+                      "recipients": [
+                        "Email1",
+                        "Email2"
+                      ]
+                    }
+                  },
                   {
-                    "type": "email",
-                    "subject": "Hello, {{ firstName }} {{ lastName }}",
-                    "content": "This is an email for you",
-                    "recipients": ["checked@mueller.com","checked2@mueller.com"]
+                    "value": "Value2",
+                    "details": {
+                      "type": "email/webhook",
+                      "subject": "Text",
+                      "content": "Content",
+                      "recipients": [
+                        "Email1",
+                        "Email2"
+                      ]
+                    }
                   }
                 ]
               }
@@ -56,7 +67,8 @@ Examples:
   }
 }
 {% endraw %}{% endhighlight %}
-
+</td>
+<td style="max-width: 100px; vertical-align: initial;">
 {% highlight javascript %}{% raw %}
 {
   "integrations": {
@@ -94,3 +106,94 @@ Examples:
   }
 }
 {% endraw %}{% endhighlight %}
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px; vertical-align: initial;">
+{% highlight javascript %}{% raw %}
+{
+  "integrations": {
+    "notifications": {
+      "enabled": boolean,
+      "mapping": {
+        "visitreport": {
+          "mappings": {
+            "mappingId": {
+              "actions": [
+                {
+                  "trigger": "created/checked",
+                  "language": "de/en",
+                  "condition": "{{ condition }}",
+                  "details": [
+                    {
+                      "type": "email/webhook",
+                      "subject": "subject",
+                      "content": "content",
+                      "attachments": [
+                        {
+                          "type": "visitreport_pdf",
+                          "name": "name"
+                        }
+                      ],
+                      "recipients": [
+                        "Email1",
+                        "Email2"
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}
+{% endraw %}{% endhighlight %}
+</td>
+<td style="max-width: 100px; vertical-align: initial;">
+{% highlight javascript %}{% raw %}
+{
+  "integrations": {
+    "notifications": {
+      "enabled": true,
+      "visitreport": {
+        "mappings": {
+          "*": {
+            "actions": [
+              {
+                "trigger": "",
+                "language": "",
+                "condition": "{{  }}",
+                "details": [
+                  {
+                    "type": "email",
+                    "subject": "VisitReport {{ visitreport.title }} von {{ organization }} - {{ firstName }} {{ lastName }}",
+                    "content": "Sehr geehrte Damen und Herren, anbei finden Sie den VisitReport {{ visitreport.title }} von {{organization}} - {{ firstName }} {{ lastName }}",
+                    "attachments": [
+                      {
+                        "type": "visitreport_pdf",
+                        "name": "VisitReport {{ visitreport.title }} von {{ organization }} - {{ firstName }} {{ lastName }}"
+                      }
+                    ],
+                    "recipients": [
+                      "info@test.de"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+{% endraw %}{% endhighlight %}
+</td>
+</tr>
+
+</tbody>
+</table>
