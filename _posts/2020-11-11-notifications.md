@@ -5,7 +5,7 @@ date:   2020-11-11 09:47:25 +0200
 permalink: notifications
 ---
 
-In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" functionality. Follow-up mails can be triggered either by exporting reports from the app or by checking reports in the dashboard. It is also possible to define conditions that have to be fulfilled for the follow-up mail to be sent.
+In the "<b>notifications</b>"-section you can configure a feature that allows you to notify colleagues about new reports. Notification mails can be triggered either by exporting reports from the app or by checking reports in the dashboard. It is also possible to define conditions that have to be fulfilled for the follow-up mail to be sent.
 
 <table>
 <colgroup>
@@ -86,7 +86,7 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
                     "type": "email",
                     "subject": "Hello Berlin",
                     "content": "This is an email for you",
-                    "recipients": ["test@berlin.de", "info@berlin.de"]
+                    "recipients": ["test@snapaddy.com", "info@snapaddy.com"]
                   }
                 }, 
                 {
@@ -95,7 +95,7 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
                     "type": "email",
                     "subject": "Hello Bavaria",
                     "content": "This is an email for you",
-                    "recipients": ["test@bayern.de", "info@bayern.de"]
+                    "recipients": ["test@snapaddy.com", "info@snapaddy.com"]
                   }
                 }]
             }]
@@ -179,7 +179,7 @@ In the "<b>notifications</b>"-section you can configure the "Follow-up Mail" fun
                       }
                     ],
                     "recipients": [
-                      "info@test.de"
+                      "info@snapaddy.com"
                     ]
                   }
                 ]
