@@ -375,10 +375,9 @@ Special default fields
   {{ gender }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  depends on the salutation-field in the DataQuality<br>
-  returns -1 when nothing is selected<br>
-  returns 0 when male salutation is selected (DE: "Herr"; EN: "Mr.")<br>
-  returns 1 when female salutation is selected (DE: "Frau"; EN: "Ms.")
+  returns -1 when no gender could be determined<br>
+  returns 0 when DataQuality determines the contact to be male<br>
+  returns 1 when DataQuality determines the contact to be female
 </td>
 </tr>
 
@@ -387,9 +386,8 @@ Special default fields
   {{ country }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the 
-  <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">Country ISO Codes</a>
-  e.g.: "DE" is grabbed for german addresses 
+  DataQuality automatically determines the 
+  <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">country ISO codes</a>
 </td>
 </tr>
 
@@ -398,7 +396,7 @@ Special default fields
   {{ state }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the <a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">State ISO Codes</a>
+  DataQuality automatically determines the <a href="https://www.iso.org/obp/ui/#iso:code:3166:DE">state ISO codes</a>
 </td>
 </tr>
 
@@ -407,7 +405,7 @@ Special default fields
   {{ industry }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
+  DataQuality automatically determines <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry codes</a>
 </td>
 </tr>
 
@@ -416,7 +414,7 @@ Special default fields
   {{ createdBy }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  returns the e-mail address of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "r.hahn@snapaddy.com"
+  returns the e-mail address of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "m.mustermann@snapaddy.com"
 </td>
 </tr>
 
@@ -425,7 +423,7 @@ Special default fields
   {{ createdByName }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  returns the first and last name of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "Rico Hahn"
+  returns the full name of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "Max Mustermann"
 </td>
 </tr>
 
