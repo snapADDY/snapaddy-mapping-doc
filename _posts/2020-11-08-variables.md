@@ -342,30 +342,6 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
 
 <tr>
 <td style="max-width: 100px;">
-  nicht sichtbar
-</td>
-<td style="max-width: 100px;">
-  not visible
-</td>
-<td style="max-width: 100px;">
-  {{ createdBy }}*
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;">
-  nicht sichtbar
-</td>
-<td style="max-width: 100px;">
-  not visible
-</td>
-<td style="max-width: 100px;">
-  {{ createdByName }}*
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;">
   Report ID
 </td>
 <td style="max-width: 100px;">
@@ -399,10 +375,9 @@ Special default fields
   {{ gender }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  depends on the salutation-field in the DataQuality<br>
-  returns -1 when nothing is selected<br>
-  returns 0 when male salutation is selected (DE: "Herr"; EN: "Mr.")<br>
-  returns 1 when female salutation is selected (DE: "Frau"; EN: "Ms.")
+  returns -1 when no gender could be determined<br>
+  returns 0 when DataQuality determines the contact to be male<br>
+  returns 1 when DataQuality determines the contact to be female
 </td>
 </tr>
 
@@ -411,9 +386,8 @@ Special default fields
   {{ country }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the 
-  <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">Country ISO Codes</a>
-  e.g.: "DE" is grabbed for german addresses 
+  DataQuality automatically determines the 
+  <a href="https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste">country ISO codes</a>
 </td>
 </tr>
 
@@ -422,27 +396,7 @@ Special default fields
   {{ state }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the <a href="https://en.wikipedia.org/wiki/ISO_3166-2:DE">State ISO Codes</a>
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;padding-bottom: 0px;">
-  {{ createdBy }}
-</td>
-<td style="max-width: 100px;padding-bottom: 0px;">
-  returns the e-mail address of the user signed in to the DataQuality
-  e.g. "r.hahn@snapaddy.com"
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;padding-bottom: 0px;">
-  {{ createdByName }}
-</td>
-<td style="max-width: 100px;padding-bottom: 0px;">
-  return the first and last name of the user signed in to the DataQuality
-  e.g. "Rico Hahn"
+  DataQuality automatically determines the <a href="https://www.iso.org/obp/ui/#iso:code:3166:DE">state ISO codes</a>
 </td>
 </tr>
 
@@ -451,10 +405,45 @@ Special default fields
   {{ industry }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  the DataQuality automatically grabs the <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry Codes</a>
+  DataQuality automatically determines <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry codes</a>
 </td>
 </tr>
 
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ createdBy }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the e-mail address of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "m.mustermann@snapaddy.com"
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ createdByName }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the full name of the user signed in to DataQuality/creator of a VisitReport<br>e.g. "Max Mustermann"
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ crmUserId }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the CRM user id of the user signed in to DataQuality/creator of a VisitReport<br>must be set in the user management settings
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  {{ crmUsername }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the CRM user name of the user signed in to DataQuality/creator of a VisitReport<br>must be set in the user management settings
+</td>
+</tr>
 
 
 </tbody>
