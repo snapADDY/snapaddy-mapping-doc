@@ -312,7 +312,7 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
   Profil-Link (Xing)
 </td>
 <td style="max-width: 100px;">
-  {{ social.xing.url }}
+  {{ xing }}
 </td>
 </tr>
 
@@ -324,7 +324,7 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
   Profil-Link (LinkedIn)
 </td>
 <td style="max-width: 100px;">
-  {{ social.linkedin.url }}
+  {{ linkedin }}
 </td>
 </tr>
 
