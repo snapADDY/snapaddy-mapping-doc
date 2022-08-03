@@ -411,6 +411,15 @@ Special default fields
 
 <tr>
 <td style="max-width: 100px;padding-bottom: 0px;">
+  {{ created }}
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the datetime when the report was created
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
   {{ createdBy }}
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
