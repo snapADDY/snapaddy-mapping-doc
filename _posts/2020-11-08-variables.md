@@ -222,6 +222,18 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
 
 <tr>
 <td style="max-width: 100px;">
+  PoBox
+</td>
+<td style="max-width: 100px;">
+  PoBox
+</td>
+<td style="max-width: 100px;">
+  {{ poBox }}
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;">
   Ort
 </td>
 <td style="max-width: 100px;">
@@ -400,21 +412,12 @@ Special default fields
 </td>
 </tr>
 
-<tr>
-<td style="max-width: 100px;padding-bottom: 0px;">
   {{ industry }}
 </td>
-<td style="max-width: 100px;padding-bottom: 0px;">
-  DataQuality automatically determines <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry codes</a>
-</td>
-</tr>
-
 <tr>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  {{ created }}
-</td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  returns the datetime when the report was created
+  DataQuality automatically determines <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry codes</a>
 </td>
 </tr>
 
