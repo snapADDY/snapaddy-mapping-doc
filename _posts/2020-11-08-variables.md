@@ -412,10 +412,10 @@ Special default fields
 </td>
 </tr>
 
-  {{ industry }}
-</td>
 <tr>
 <td style="max-width: 100px;padding-bottom: 0px;">
+  {{ industry }}
+</td>
 <td style="max-width: 100px;padding-bottom: 0px;">
   DataQuality automatically determines <a href="https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes">industry codes</a>
 </td>
