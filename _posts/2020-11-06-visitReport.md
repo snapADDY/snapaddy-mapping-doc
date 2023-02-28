@@ -175,6 +175,42 @@ null if not filled/selected else questionoption.value
 </td>
 </tr>
 
+<tr>
+<td style="vertical-align: initial; vertical-align: initial;">
+created
+</td>
+<td style="vertical-align: initial; vertical-align: initial;">
+timestamp when the report was created in ISO format
+</td>
+</tr>
+
+<tr>
+<td style="vertical-align: initial; vertical-align: initial;">
+checked
+</td>
+<td style="vertical-align: initial; vertical-align: initial;">
+true, if the report was checked, false if not
+</td>
+</tr>
+
+<tr>
+<td style="vertical-align: initial; vertical-align: initial;">
+checkedAt
+</td>
+<td style="vertical-align: initial; vertical-align: initial;">
+timestamp when the report was created in ISO format, null if not checked
+</td>
+</tr>
+
+<tr>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  createdBy
+</td>
+<td style="max-width: 100px;padding-bottom: 0px;">
+  returns the e-mail address of the user who checked the report
+</td>
+</tr>
+
 </tbody>
 </table>
 
