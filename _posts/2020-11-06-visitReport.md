@@ -144,7 +144,7 @@ More detailed information about the selected/answered options
 visitreport.result['QUESTIONID'].options['OPTIONID'].title
 </td>
 <td style="vertical-align: initial; vertical-align: initial;">
-Defined option label in current DataQuality/export language
+Title of the question in current DataQuality/export language
 </td>
 </tr>
 
