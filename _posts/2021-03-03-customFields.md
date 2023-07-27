@@ -5,6 +5,7 @@ date:   2020-11-10 09:47:25 +0200
 permalink: custom-fields
 category: general
 ---
+They can be used for Excel imports in DataQuality, when custom fields are needed.
 You can access the created custom fields by using the "id" in the mapping. The "id" always has to start with "c_".
 
 Examples:
