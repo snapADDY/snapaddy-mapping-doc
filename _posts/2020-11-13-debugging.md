@@ -11,4 +11,4 @@ You can see what will be exported to the CRM by looking at the "<b>EntityMapping
 
 See screenshot below:
 
-![Console log screenshot](debugging.png)
+![Console log screenshot](assets/debugging.png)
