@@ -36,6 +36,3 @@ Multiple connections to different CRM systems can be included in one mapping doc
 {% endraw %}{% endhighlight %}
 
 
-
-It is  best to start a new mapping by inserting the corresponding <a href="https://github.com/snapADDY/snapaddy-mapping-samples/tree/master">mapping sample</a>) into the integrations branch. This creates a basic valid mapping and may help understanding the syntax. "<i>meta</i>", "<i>defaultExport</i>", "<i>visitReport</i>" and "<i>code</i>" are included, even if parts are not used, it does not affect the rest of the mapping.
-Now the mapping can be adapted by adding, removing or changing the entities and fields. More on that in "<i>mappings</i>".
