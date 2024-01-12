@@ -364,6 +364,18 @@ snapADDY provides a set of pre-defined <b>variables</b> which allow you to make 
 </td>
 </tr>
 
+<tr>
+<td style="max-width: 100px;">
+  Report ID Teilnehmer
+</td>
+<td style="max-width: 100px;">
+  Report ID participant
+</td>
+<td style="max-width: 100px;">
+  {{ childIndex }}
+</td>
+</tr>
+
 </tbody>
 <table>
 
