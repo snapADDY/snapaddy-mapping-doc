@@ -207,7 +207,7 @@ timestamp when the report was created in ISO format, null if not checked
   createdBy
 </td>
 <td style="max-width: 100px;padding-bottom: 0px;">
-  returns the e-mail address of the user who checked the report
+  returns the e-mail address of the user who created the report
 </td>
 </tr>
 
