@@ -23,10 +23,6 @@ baseurl: "/" # the subpath of your site, e.g. /blog
 url: "http://mapping.snapaddy.com" # the base hostname & protocol for your site, e.g. http://example.com
 homepage: "https://snapaddy.com"
 
-twitter_username: snapaddy
-github_username:  snapADDY
-facebook_username: snapaddy
-
 # Build settings
 markdown: kramdown
 theme: minima

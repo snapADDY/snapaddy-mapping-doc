@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Getting Started"
-date:   2020-11-01 14:21:15 +0200
+date:   2020-11-01 12:00:00 +0200
 permalink: getting-started
 
 ---

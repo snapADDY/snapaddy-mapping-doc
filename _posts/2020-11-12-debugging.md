@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Section: debugging"
-date:   2020-11-13 09:47:27 +0200
+date:   2020-11-12 12:00:00 +0200
 permalink: debugging
 ---
 

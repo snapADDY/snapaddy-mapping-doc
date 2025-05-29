@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Section: components"
-date:   2020-11-10 09:47:24 +0200
+date:   2020-11-10 12:00:00 +0200
 permalink: components
 ---
 
@@ -19,19 +19,21 @@ Note:
 
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tr class="header">
-<th>Syntax</th>
-<th>Example</th>
-</tr>
-
-<tbody>
-<tr>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+  <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Syntax</th>
+      <th>Example</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    <tr>
+      <td>
+{% highlight json %}{% raw %}
 {
   "*": {
      "entity": [
@@ -68,9 +70,9 @@ Note:
   }
 }
 {% endraw %}{% endhighlight %}
-</td>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+      </td>
+      <td>
+{% highlight json %}{% raw %}
 {
   "*": {
      "lead": [
@@ -134,36 +136,31 @@ Note:
   }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
-
-</tbody>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 List with all available data types:
 
 <table>
-<colgroup>
-<col width="10%" />
-<col width="25%" />
-<col width="65%" />
-</colgroup>
-<tr class="header">
-<th>Data Type</th>
-<th>Description</th>
-<th>Example</th>
-</tr>
+  <colgroup>
+    <col width="10%" />
+    <col width="25%" />
+    <col width="65%" />
+  </colgroup>
+  <tr class="header">
+    <th>Data Type</th>
+    <th>Description</th>
+    <th>Example</th>
+  </tr>
 
-<tbody>
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-input
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-Free text input
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-{% highlight javascript %}{% raw %}
+  <tbody>
+    <tr>
+      <td>input</td>
+      <td>Free text input</td>
+      <td>
+{% highlight json %}{% raw %}
 {
     "ContactFirstName":{
       "id":"ContactFirstName",
@@ -175,19 +172,17 @@ Free text input
     }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
+      </td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-select
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-<b>One</b> option <b>can</b> be selected.
-Note: By default the options will be fetched from the FieldDefinitions, unless they are overwritten in the properties of that component. When overwriting the option, watch out that the values match with the fieldDefinitions
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-{% highlight javascript %}{% raw %}
+    <tr>
+      <td>select</td>
+      <td>
+        <b>One</b> option <b>can</b> be selected.
+        Note: By default the options will be fetched from the FieldDefinitions, unless they are overwritten in the properties of that component. When overwriting the option, watch out that the values match with the fieldDefinitions
+      </td>
+      <td>
+{% highlight json %}{% raw %}
 {
     "Newsletter": {
         "id": "Newsletter",
@@ -217,19 +212,17 @@ Note: By default the options will be fetched from the FieldDefinitions, unless t
     }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
+      </td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-multiselect
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-<b>Multiple</b> options <b>can</b> be selected
-Note: By default the options will be fetched from the fieldDefinitions, unless they are overwritten by the properties of that component. When overwriting the option, watch out that the values match with the fieldDefinitions
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-{% highlight javascript %}{% raw %}
+    <tr>
+      <td>multiselect</td>
+      <td>
+        <b>Multiple</b> options <b>can</b> be selected
+        Note: By default the options will be fetched from the fieldDefinitions, unless they are overwritten by the properties of that component. When overwriting the option, watch out that the values match with the fieldDefinitions
+      </td>
+      <td>
+{% highlight json %}{% raw %}
 {
     "Channel": {
         "id": "Channel",
@@ -273,18 +266,14 @@ Note: By default the options will be fetched from the fieldDefinitions, unless t
     }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
+      </td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-date
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-{% highlight javascript %}{% raw %}
+    <tr>
+      <td>date</td>
+      <td></td>
+      <td>
+{% highlight json %}{% raw %}
 {
     "Erfassungstag__c": {
         "id": "Erfassungstag__c",
@@ -296,18 +285,14 @@ date
     }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
+      </td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-checkbox
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-{% highlight javascript %}{% raw %}
+    <tr>
+      <td>checkbox</td>
+      <td></td>
+      <td>
+{% highlight json %}{% raw %}
 {
     "ccp_apec": {
         "id": "ccp_apec",
@@ -335,29 +320,28 @@ checkbox
     }
 }
 {% endraw %}{% endhighlight %}
-** "options" can be left out with most CRM, so that it dynamically gets the options from the CRM
-
-</td>
-</tr>
-
-</tbody>
+** "options" can be left out with most CRMs, as they will be loaded dynamically from the CRM
+      </td>
+    </tr>
+  </tbody>
 </table>
 
 detailsLabel add a description to the field. The whole description is visible when cursor hovers over the field. Language specific labels can be set.
-<table>
-<colgroup>
-<col width="15%" />
-<col width="25%" />
-</colgroup>
-<tr class="header">
-<th>Syntax</th>
-<th>Example</th>
-</tr>
 
-<tbody>
-<tr>
-<td style="max-width: 100px;vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+<table>
+  <colgroup>
+    <col width="15%" />
+    <col width="25%" />
+  </colgroup>
+  <tr class="header">
+    <th>Syntax</th>
+    <th>Example</th>
+  </tr>
+
+  <tbody>
+    <tr>
+      <td>
+{% highlight json %}{% raw %}
 {
     "field":{
       "id":"field",
@@ -373,9 +357,9 @@ detailsLabel add a description to the field. The whole description is visible wh
     }
 }
 {% endraw %}{% endhighlight %}
-</td>
-<td style="max-width: 100px;vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+      </td>
+      <td>
+{% highlight json %}{% raw %}
 {
     "ContactFirstName":{
       "id":"ContactFirstName",
@@ -391,77 +375,48 @@ detailsLabel add a description to the field. The whole description is visible wh
     }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
-
-</tbody>
+      </td>
+    </tr>
+  </tbody>
 </table>
 
-List with all available properties: 
+List with all available properties:
 <table>
-<colgroup>
-<col width="20%" />
-<col width="80%" />
-</colgroup>
-<tr class="header">
+  <colgroup>
+    <col width="20%" />
+    <col width="80%" />
+  </colgroup>
+  <tr class="header"></tr>
+  <tbody>
+    <tr>
+      <td>hidden</td>
+      <td>Field will be hidden in export view. Value will be sent</td>
+    </tr>
 
-</tr>
+    <tr>
+      <td>required</td>
+      <td>If the field is empty, the export will not be possible</td>
+    </tr>
 
-<tbody>
+    <tr>
+      <td>identifier</td>
+      <td>Value will always be sent, even if not modified</td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-hidden
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-Field will be hidden in export view. Value will be sent
-</td>
-</tr>
+    <tr>
+      <td>maxLength</td>
+      <td>Id the maxLength is exceeded, a popup notifies the user (field type input only)</td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-required
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-If the field is empty, the export will not be possible
-</td>
-</tr>
+    <tr>
+      <td>defaultValue</td>
+      <td>defaultValue, the defaultValue will be exported</td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-identifier
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-Value will always be sent, even if not modified
-</td>
-</tr>
+    <tr>
+      <td>locked</td>
+      <td>Field cannot be modified, always uses the value received from the CRM</td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-maxLength
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-Id the maxLength is exceeded, a popup notifies the user (field type input only)
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-defaultValue
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-defaultValue, the defaultValue will be exported
-</td>
-</tr>
-
-<tr>
-<td style="max-width: 100px;vertical-align: initial;;">
-locked
-</td>
-<td style="max-width: 100px;vertical-align: initial;;">
-Field cannot be modified, always uses the value received from the CRM
-</td>
-</tr>
-
-</tbody>
+  </tbody>
 </table>
