@@ -5,7 +5,7 @@ date:   2020-11-03 12:00:00 +0200
 permalink: integrations
 ---
 
-The <b>integration</b> is the connection between the data from the <b>snapADDY DataQuality</b>, <b>CardScanner</b> or <b>VisitReport</b> and your CRM system.
+The <b>integration</b> is the connection between the data from the <b>snapAddy DataQuality</b>, <b>CardScanner</b> or <b>VisitReport</b> and your CRM system.
 
 An empty integration for DataQuality- and VisitReport-Export looks like this:
 

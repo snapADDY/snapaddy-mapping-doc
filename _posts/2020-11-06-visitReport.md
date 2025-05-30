@@ -5,7 +5,7 @@ date:   2020-11-06 12:00:00 +0200
 permalink: visitReport
 ---
 
-The "<b>visitReport</b>"-section determines all export-settings regarding the <b>snapADDY VisitReport</b>. 
+The "<b>visitReport</b>"-section determines all export-settings regarding the <b>snapAddy VisitReport</b>. 
 An empty visitReport looks like this (Notice the "*"):
 
 {% highlight json %}

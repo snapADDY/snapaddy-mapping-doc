@@ -43,15 +43,15 @@ Examples:
           },
           {
             "label": {
-              "DE": "snapADDY DataQuality",
-              "GB": "snapADDY DataQuality"
+              "DE": "snapAddy DataQuality",
+              "GB": "snapAddy DataQuality"
             },
             "value": "snapaddy_dataQuality"
           },
           {
             "label": {
-              "DE": "snapADDY VisitReport",
-              "GB": "snapADDY VisitReport"
+              "DE": "snapAddy VisitReport",
+              "GB": "snapAddy VisitReport"
             },
             "value": "snapaddy_visitreport"
           }
