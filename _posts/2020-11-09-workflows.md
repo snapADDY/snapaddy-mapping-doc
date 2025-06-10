@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Section: workflows"
-date:   2020-11-06 09:47:23 +0200
+date:   2020-11-09 12:00:00 +0200
 permalink: workflows
 ---
 
@@ -21,8 +21,8 @@ Additional entities (that do not exist in the CRM System by default) can be crea
 
 <tbody>
 <tr>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+<td>
+{% highlight json %}{% raw %}
 "workflows":{
   "*": {
     "CRMentity": [
@@ -44,8 +44,8 @@ Additional entities (that do not exist in the CRM System by default) can be crea
 }
 {% endraw %}{% endhighlight %}
 </td>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+<td>
+{% highlight json %}{% raw %}
 "workflows": {
   "*": {
      "lead": [

@@ -1,30 +1,31 @@
 ---
 layout: post
 title:  "Section: notifications"
-date:   2020-11-11 09:47:25 +0200
+date:   2020-11-11 12:00:00 +0200
 permalink: notifications
 ---
 
 In the "<b>notifications</b>"-section you can configure a feature that allows you to notify colleagues about new reports. Notification mails can be triggered either by exporting reports from the app or by checking reports in the dashboard. It is also possible to define conditions that have to be fulfilled for the follow-up mail to be sent.
 
 <table>
-<colgroup>
-<col width="50%" />
-<col width="50%" />
-</colgroup>
-<tr class="header">
-<th>Syntax</th>
-<th>Example</th>
-</tr>
+  <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>Syntax</th>
+      <th>Example</th>
+    </tr>
+  </thead>
 
-<tbody>
-<tr>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+  <tbody>
+    <tr>
+      <td>
+{% highlight json %}{% raw %}
 {
   "integrations": {
     "notifications": {
-      "enabled": boolean,
       "visitreport": {
         "mappings": {
           "mappingId": {
@@ -67,13 +68,12 @@ In the "<b>notifications</b>"-section you can configure a feature that allows yo
   }
 }
 {% endraw %}{% endhighlight %}
-</td>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+      </td>
+      <td>
+{% highlight json %}{% raw %}
 {
   "integrations": {
     "notifications": {
-      "enabled": true,
         "visitreport": {
         "mappings": {
           "*": {
@@ -106,16 +106,15 @@ In the "<b>notifications</b>"-section you can configure a feature that allows yo
   }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
+      </td>
+    </tr>
 
-<tr>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+    <tr>
+      <td>
+{% highlight json %}{% raw %}
 {
   "integrations": {
     "notifications": {
-      "enabled": boolean,
       "mapping": {
         "visitreport": {
           "mappings": {
@@ -152,13 +151,12 @@ In the "<b>notifications</b>"-section you can configure a feature that allows yo
   }
 }
 {% endraw %}{% endhighlight %}
-</td>
-<td style="max-width: 100px; vertical-align: initial;">
-{% highlight javascript %}{% raw %}
+      </td>
+      <td>
+{% highlight json %}{% raw %}
 {
   "integrations": {
     "notifications": {
-      "enabled": true,
       "visitreport": {
         "mappings": {
           "*": {
@@ -192,8 +190,7 @@ In the "<b>notifications</b>"-section you can configure a feature that allows yo
   }
 }
 {% endraw %}{% endhighlight %}
-</td>
-</tr>
-
-</tbody>
+      </td>
+    </tr>
+  </tbody>
 </table>
