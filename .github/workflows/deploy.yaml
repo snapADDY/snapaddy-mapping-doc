@@ -1,0 +1,36 @@
+name: Release (Production)
+on:
+  push:
+    tags:
+      - "[0-9]+.[0-9]+.[0-9]+"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      # https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list-AWS_EC2_METADATA_DISABLED
+      AWS_EC2_METADATA_DISABLED: "true"
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          cache: 'pnpm'
+
+      - name: Install Dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Build
+        run: pnpm build
+
+      - name: Deploy App
+        if: success()
+        run: |
+          aws s3 sync docs/.vitepress/dist/ s3://mapping.snapaddy.com --delete --exclude robots.txt
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_PROD_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_PROD_KEY }}
