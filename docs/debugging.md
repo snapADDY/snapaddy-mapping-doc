@@ -6,8 +6,8 @@ When debugging, set the log level to `Verbose` and run `setLogLevel(0)` in the c
 
 See screenshot below:
 
-![alt text](./public/assets/setLogLevel.png)
- 
+![alt text](./public/assets/setLogLevel.png) 
+
 You can see what will be exported to the CRM by looking at the "**EntityMapping**" logs. This log will appear as soon as the merge view is opened. Every entity in the mappings should appear in the Console. Expand the log to see what the mapping for the entity returned (**Mapping(entity) returned**). 
 
 See screenshot below:
