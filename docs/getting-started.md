@@ -1,4 +1,4 @@
-# Getting Started
+# Introduction
 
 snapAddy allows you to use pre-built, out-of-the-box interfaces with your CRM system for a plug-and-play experience. Simply connect to your CRM system using one of the snapAddy products and instantly create or update contact information for default fields like name, company, and address.
 

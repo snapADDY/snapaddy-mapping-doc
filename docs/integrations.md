@@ -1,6 +1,6 @@
 # Integrations
 
-The integration defines the connection between the data from snapAddy DataQuality, BusinessCards, or VisitReport and your CRM system.
+The **integration** defines the connection between the data from **snapAddy DataQuality**, **BusinessCards**, or **VisitReport** and your CRM system.
 
 An empty integration for DataQuality and VisitReportExport looks like this:
 
@@ -15,7 +15,7 @@ An empty integration for DataQuality and VisitReportExport looks like this:
 }
 ```
 
-You can include multiple connections to different CRM systems in one mapping document by separating them with a comma:
+You can include multiple connections to different CRM systems in one mapping document by **separating** them with a comma:
 
 ```json
 {

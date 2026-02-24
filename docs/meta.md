@@ -54,7 +54,7 @@ For Salesforce, the `meta` section might look like this, defining common entitie
 }
 ```
 
-## available entity meta properties
+## Available entity meta properties
 
 ### apiName
 The `apiName` property specifies the actual name of the entity in the CRM system.
@@ -67,7 +67,7 @@ The `idProperty` defines the unique identifier field used internally by the CRM 
 Example: `"idProperty": "Id"`
 
 ### allowedActions
-This property defines which operations are permitted on the entity, such as creating new records or updating existing ones. It helps enforce business rules at the mapping level.
+`allowedActions` define which operations are permitted on the entity, such as creating new records or updating existing ones. It helps enforce business rules at the mapping level.
 
 Example:
 ```json

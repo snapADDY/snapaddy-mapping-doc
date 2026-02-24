@@ -53,7 +53,6 @@ export default defineConfig({
         text: 'Advanced Topics',
         items: [
           { text: 'Custom Fields', link: '/customFields' },
-          { text: 'Notifications', link: '/notifications' },
           { text: 'Debugging', link: '/debugging' }
         ]
       }
