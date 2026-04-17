@@ -1,0 +1,72 @@
+/**
+ * Customize default theme styling by overriding CSS variables:
+ * https://github.com/vuejs/vitepress/blob/main/src/client/theme-default/styles/vars.css
+ */
+
+:root {
+  /* Brand colors */
+  /* darkgreen-700 */
+  --vp-c-brand-1: #004c37;
+  /* green-500 */
+  --vp-c-brand-2: #87bd25;
+  /* darkmint-600 */
+  --vp-c-brand-3: #3d7880;
+
+  /* gray-950 */
+  --vp-c-text-1: #0d0d0c;
+  /* gray-900 */
+  --vp-c-text-2: #1b1b18;
+  /* darksage-600 */
+  --vp-c-text-3: #546e57;
+
+  scrollbar-gutter: stable;
+}
+
+/* Dark mode colors */
+.dark {
+  /* green-500 */
+  --vp-c-brand-1: #87bd25;
+  /* green-400 */
+  --vp-c-brand-2: #a3d93f;
+  /* darkmint-500 */
+  --vp-c-brand-3: #4f9ca6;
+
+  /* gray-50 */
+  --vp-c-text-1: #f5f5f4;
+  /* gray-200 */
+  --vp-c-text-2: #d6d6d1;
+  /* green-700 */
+  --vp-c-text-3: #537317;
+}
+
+/* Hero section customization */
+.VPHero .tagline {
+  opacity: 0.8;
+  font-size: 1.2em;
+  line-height: 1.4;
+}
+
+/* Search customization */
+.DocSearch-Button {
+  border: 1px solid var(--vp-c-divider);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .VPHero .name {
+    font-size: 2.5rem;
+  }
+
+  .VPHero .tagline {
+    font-size: 1.1rem;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 0.5rem 0.75rem;
+  }
+}
