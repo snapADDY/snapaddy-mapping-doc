@@ -18,6 +18,8 @@
   --vp-c-text-2: #1b1b18;
   /* darksage-600 */
   --vp-c-text-3: #546e57;
+
+  scrollbar-gutter: stable;
 }
 
 /* Dark mode colors */

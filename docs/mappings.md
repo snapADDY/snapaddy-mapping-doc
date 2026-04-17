@@ -50,73 +50,85 @@ The whole entity mapping looks like this:
 `"{{  }}"` either contains:
 
 <table>
-  <col style="width:20%" />
-  <col style="width:30%" />
-  <col style="width:30%" />
-  <col style="width:20%" />
-  <tr>
-    <th>Type</th>
-    <th>Syntax</th>
-    <th>Example</th>
-    <th>Explanation</th>
-  </tr>
-  <tr>
-    <td>Empty</td>
-    <td><code>{{ }}</code></td>
-    <td><code>{{ }}</code></td>
-    <td>Nothing (null) is set</td>
-  </tr>
-  <tr>
-    <td>Default Value</td>
-    <td><code>{{ 'DefaultValue' }}</code></td>
-    <td><code>{{ 'Exhibitions' }}</code></td>
-    <td>Sets the entered value</td>
-  </tr>
-  <tr>
-    <td>snapAddy variable</td>
-    <td><code>{{ variable }}</code></td>
-    <td><code>{{ firstName }}</code></td>
-    <td>Sets the value of the default field. There's a list of all default fields in the <a href="/variables">Variables</a> section.</td>
-  </tr>
-  <tr>
-    <td>Predefined Function</td>
-    <td><code>{{ functionX(arg) }}</code></td>
-    <td><code>{{ parseStreet(street).number }}</code></td>
-    <td>Executes the function and sets its return value. Note: function must be defined in the "code" branch.</td>
-  </tr>
-  <tr>
-    <td>question response</td>
-    <td><code>{{ _answers['id'] }}</code></td>
-    <td><code>{{ _answers['xOa9VA3JZd6b2qlv'] }}</code></td>
-    <td>Sets the response of the VR question with the id. _answers[] will return null, if the question does not have an answer. This behaves like an empty mapping.</td>
-  </tr>
+  <colgroup>
+    <col style="width:20%" />
+    <col style="width:30%" />
+    <col style="width:30%" />
+    <col style="width:20%" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Type</th>
+      <th>Syntax</th>
+      <th>Example</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Empty</td>
+      <td><code>{{ }}</code></td>
+      <td><code>{{ }}</code></td>
+      <td>Nothing (null) is set</td>
+    </tr>
+    <tr>
+      <td>Default Value</td>
+      <td><code>{{ 'DefaultValue' }}</code></td>
+      <td><code>{{ 'Exhibitions' }}</code></td>
+      <td>Sets the entered value</td>
+    </tr>
+    <tr>
+      <td>snapAddy variable</td>
+      <td><code>{{ variable }}</code></td>
+      <td><code>{{ firstName }}</code></td>
+      <td>Sets the value of the default field. There's a list of all default fields in the <a href="/variables">Variables</a> section.</td>
+    </tr>
+    <tr>
+      <td>Predefined Function</td>
+      <td><code>{{ functionX(arg) }}</code></td>
+      <td><code>{{ parseStreet(street).number }}</code></td>
+      <td>Executes the function and sets its return value. Note: function must be defined in the "code" branch.</td>
+    </tr>
+    <tr>
+      <td>question response</td>
+      <td><code>{{ _answers['id'] }}</code></td>
+      <td><code>{{ _answers['xOa9VA3JZd6b2qlv'] }}</code></td>
+      <td>Sets the response of the VR question with the id. _answers[] will return null, if the question does not have an answer. This behaves like an empty mapping.</td>
+    </tr>
+  </tbody>
 </table>
 
 Multiple values can be chained together by using logic operators.
 
 <table>
-  <col style="width:20%" />
-  <col style="width:20%" />
-  <col style="width:30%" />
-  <col style="width:30%" />
-  <tr>
-    <th>Operator</th>
-    <th>Syntax</th>
-    <th>Example</th>
-    <th>Explanation</th>
-  </tr>
-  <tr>
-    <td>OR</td>
-    <td><code>||</code></td>
-    <td><code>{{ value1 || value2 }}</code></td>
-    <td>value1 or value2</td>
-  </tr>
-  <tr>
-    <td>AND</td>
-    <td><code>&&</code></td>
-    <td><code>{{ value1 && value2 }}</code></td>
-    <td>value1 and value2</td>
-  </tr>
+  <colgroup>
+    <col style="width:20%" />
+    <col style="width:20%" />
+    <col style="width:30%" />
+    <col style="width:30%" />
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Operator</th>
+      <th>Syntax</th>
+      <th>Example</th>
+      <th>Explanation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>OR</td>
+      <td><code>||</code></td>
+      <td><code>{{ value1 || value2 }}</code></td>
+      <td>value1 or value2</td>
+    </tr>
+    <tr>
+      <td>AND</td>
+      <td><code>&&</code></td>
+      <td><code>{{ value1 && value2 }}</code></td>
+      <td>value1 and value2</td>
+    </tr>
+  </tbody>
 </table>
 ::: 
 
