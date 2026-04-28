@@ -5,9 +5,9 @@ hero:
   name: snapAddy
   text: Mapping Documentation
   tagline: Comprehensive guide for creating custom CRM mappings with snapAddy
-  image:
-    src: /assets/snapAddy-logo.svg
-    alt: snapAddy
+  # image:
+  #   src: /assets/snapAddy-logo.svg
+  #   alt: snapAddy
   actions:
     - theme: brand
       text: Get Started
@@ -31,7 +31,7 @@ features:
     details: Use powerful template expressions with logical operators for dynamic data transformation.
   - icon: 🐛
     title: Debugging Tools
-    details: Debug your mappings with comprehensive logging and error reporting in the snapAddy DataQuality console.
+    details: Debug your mappings with comprehensive logging and error reporting in the snapAddy LeadResearch console.
 ---
 
 ## About snapAddy Mapping
