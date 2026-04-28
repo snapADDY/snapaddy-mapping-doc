@@ -4,6 +4,8 @@ export default defineConfig({
   title: 'snapAddy',
   description: 'snapAddy is a sales tool that saves you a lot of time and effort when researching and collecting contact data. Automatic maintenance of contact data in your CRM system! This reference helps customers to make a custom CRM mapping with snapAddy.',
 
+  cleanUrls: true,
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { property: 'og:title', content: 'snapAddy Mapping Documentation' }],
@@ -63,7 +65,7 @@ export default defineConfig({
 
     footer: {
       message: 'snapAddy Mapping Documentation',
-      copyright: 'Copyright © 2025 snapAddy'
+      copyright: 'Copyright © 2026 snapAddy'
     },
 
     search: {
