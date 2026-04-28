@@ -1,8 +1,8 @@
 # Integrations
 
-The **integration** defines the connection between the data from **snapAddy DataQuality**, **BusinessCards**, or **VisitReport** and your CRM system.
+The **integration** defines the connection between the data from **snapAddy LeadResearch**, **BusinessCards**, or **VisitReport** and your CRM system.
 
-An empty integration for DataQuality and VisitReportExport looks like this:
+An empty integration for LeadResearch/BusinessCards and VisitReport looks like this:
 
 ```json
 "integrations": {

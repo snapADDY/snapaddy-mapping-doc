@@ -10,7 +10,7 @@ Here are some important points to remember when working with the mapping documen
 - Using double quotes for strings is not allowed because they are part of the JSON syntax. Use single quotes instead.
 - API keywords must not contain spaces. Use underscores (_) if needed.
 - Maintaining a clean layout is highly recommended. Use the format button in the online configurator or switch to an external editor.
-- After making changes to the mapping document, update, save, and activate the current revision for testing. Then, reload the DataQuality/VisitReport window to use the latest revision.
+- After making changes to the mapping document, update, save, and activate the current revision for testing. Then, reload the LeadResearch/VisitReport window to use the latest revision.
 
 An empty snapAddy mapping document looks like this:
 

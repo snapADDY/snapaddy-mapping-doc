@@ -43,12 +43,12 @@ snapAddy provides a set of pre-defined **variables** which allow you to make map
 ::: v-pre
 | Field name | Behaviour |
 |------------|-----------|
-| `{{ gender }}` | returns -1 when no gender could be determined<br/>returns 0 when DataQuality determines the contact to be male<br/>returns 1 when DataQuality determines the contact to be female |
-| `{{ country }}` | DataQuality automatically determines the [country ISO codes](https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste) |
-| `{{ state }}` | DataQuality automatically determines the [state ISO codes](https://www.iso.org/obp/ui/#iso:code:3166:DE) |
-| `{{ industry }}` | DataQuality automatically determines [industry codes](https://developers.snapaddy.com/dataquality-rest-api/guides/industry-codes) |
-| `{{ createdBy }}` | returns the e-mail address of the user signed in to DataQuality/creator of a VisitReport<br/>e.g. "m.mustermann@snapaddy.com" |
-| `{{ createdByName }}` | returns the full name of the user signed in to DataQuality/creator of a VisitReport<br/>e.g. "Max Mustermann" |
-| `{{ crmUserId }}` | returns the CRM user id of the user signed in to DataQuality/creator of a VisitReport<br/>must be set in the user management settings |
-| `{{ crmUsername }}` | returns the CRM user name of the user signed in to DataQuality/creator of a VisitReport<br/>must be set in the user management settings |
+| `{{ gender }}` | returns -1 when no gender could be determined<br/>returns 0 when LeadResearch determines the contact to be male<br/>returns 1 when LeadResearch determines the contact to be female |
+| `{{ country }}` | LeadResearch automatically determines the [country ISO codes](https://de.wikipedia.org/wiki/ISO-3166-1-Kodierliste) |
+| `{{ state }}` | LeadResearch automatically determines the [state ISO codes](https://www.iso.org/obp/ui/#iso:code:3166:DE) |
+| `{{ industry }}` | LeadResearch automatically determines [industry codes](https://developers.snapaddy.com/contacts-rest-api/guides/industry-codes) |
+| `{{ createdBy }}` | returns the e-mail address of the user signed in to LeadResearch/creator of a VisitReport<br/>e.g. "m.mustermann@snapaddy.com" |
+| `{{ createdByName }}` | returns the full name of the user signed in to LeadResearch/creator of a VisitReport<br/>e.g. "Max Mustermann" |
+| `{{ crmUserId }}` | returns the CRM user id of the user signed in to LeadResearch/creator of a VisitReport<br/>must be set in the user management settings |
+| `{{ crmUsername }}` | returns the CRM user name of the user signed in to LeadResearch/creator of a VisitReport<br/>must be set in the user management settings |
 :::

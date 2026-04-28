@@ -1,6 +1,6 @@
 # Custom Fields
 
-Custom fields can be used for Excel imports in DataQuality. You can access the created custom fields by using the "id" in the mapping. The "id" always has to start with `c_`.
+Custom fields can be used for Excel imports in LeadResearch. You can access the created custom fields by using the "id" in the mapping. The "id" always has to start with `c_`.
 
 ## Examples:
 
@@ -38,10 +38,10 @@ Custom fields can be used for Excel imports in DataQuality. You can access the c
           },
           {
             "label": {
-              "DE": "snapAddy DataQuality",
-              "GB": "snapAddy DataQuality"
+              "DE": "snapAddy LeadResearch",
+              "GB": "snapAddy LeadResearch"
             },
-            "value": "snapaddy_dataQuality"
+            "value": "snapaddy_leadResearch"
           },
           {
             "label": {
