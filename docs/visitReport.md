@@ -31,13 +31,13 @@ You can create multiple mappings for different templates by exchanging the "*", 
 | visitreport.title | The title of the visitreport |
 | visitreport.campaignId | The campaign ID entered in the template settings |
 | visitreport.customFields.KEY | The custom key value entered in the template settings |
-| visitreport.result['QUESTIONID'].question | Question title in current DataQuality / export language |
-| visitreport.result['QUESTIONID'].title | Defined option label in current DataQuality / export language |
+| visitreport.result['QUESTIONID'].question | Question title in current LeadResearch / export language |
+| visitreport.result['QUESTIONID'].title | Defined option label in current LeadResearch / export language |
 | visitreport.result['QUESTIONID'].text | User input, in case of multiple input options (;-delimited) |
 | visitreport.result['QUESTIONID'].data | Values set for each selected questionOption (only used in select + multiselect) or if no Value is set the User Input (;-delimited) |
 | visitreport.result['QUESTIONID'].value | Values for each selected questionOption (;-delimited) |
 | visitreport.result['QUESTIONID'].options['OPTIONID'] | More detailed information about the selected/answered options |
-| visitreport.result['QUESTIONID'].options['OPTIONID'].title | Title of the question in current DataQuality/export language |
+| visitreport.result['QUESTIONID'].options['OPTIONID'].title | Title of the question in current LeadResearch/export language |
 | visitreport.result['QUESTIONID'].options['OPTIONID'].text | null if not filled/selected else User input for specific option (useful for multiple input options) |
 | visitreport.result['QUESTIONID'].options['OPTIONID'].data | null if not filled/selected else userinput or value or label |
 | visitreport.result['QUESTIONID'].options['OPTIONID'].value | null if not filled/selected else questionoption.value |

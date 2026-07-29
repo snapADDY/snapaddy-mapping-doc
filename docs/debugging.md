@@ -1,6 +1,6 @@
 # Debugging
 
-Debugging is very important step in the mapping process. The snapAddy DataQuality has a powerful debug console, that can be opened by pressing [F12] in the DataQuality window. This opens a new DevTool debug console window. Make sure that "Console" is selected in the top row. This will give you useful information about what DataQuality is doing.
+Debugging is very important step in the mapping process. The snapAddy LeadResearch has a powerful debug console, that can be opened by pressing [F12] in the LeadResearch window. This opens a new DevTool debug console window. Make sure that "Console" is selected in the top row. This will give you useful information about what LeadResearch is doing.
 
 When debugging, set the log level to `Verbose` and run `setLogLevel(0)` in the console. This ensures that all log levels are enabled and provides full visibility into the logs.
 

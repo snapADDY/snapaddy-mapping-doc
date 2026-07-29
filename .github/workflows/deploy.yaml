@@ -4,22 +4,33 @@ on:
     tags:
       - "[0-9]+.[0-9]+.[0-9]+"
 
+permissions:
+  contents: read
+  id-token: write
+
 jobs:
   deploy:
+    environment:
+      name: Production
+      url: https://mapping.snapaddy.com
+
     runs-on: ubuntu-latest
-    env:
-      # https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-envvars.html#envvars-list-AWS_EC2_METADATA_DISABLED
-      AWS_EC2_METADATA_DISABLED: "true"
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v6
+        with:
+          role-to-assume: arn:aws:iam::237519622892:role/CI-gha-mapping-doc
+          aws-region: eu-central-1
 
       - name: Install pnpm
-        uses: pnpm/action-setup@v4
+        uses: pnpm/action-setup@v5
 
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v6
         with:
-          cache: 'pnpm'
+          cache: "pnpm"
 
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -27,10 +38,22 @@ jobs:
       - name: Build
         run: pnpm build
 
-      - name: Deploy App
-        if: success()
+      - name: Deploy
         run: |
-          aws s3 sync docs/.vitepress/dist/ s3://mapping.snapaddy.com --delete --exclude robots.txt
+          echo "Uploading assets with caching"
+          aws s3 sync $SRC_DIR/assets s3://$BUCKET_NAME/assets \
+            --delete \
+            --no-progress \
+            --cache-control 'public, max-age=604800, immutable'
+
+          echo "Uploading other files with no-cache"
+          aws s3 sync $SRC_DIR s3://$BUCKET_NAME \
+            --delete \
+            --no-progress \
+            --exclude 'assets/*' \
+            --cache-control 'no-cache'
+
         env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_PROD_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_PROD_KEY }}
+          SRC_DIR: docs/.vitepress/dist
+          BUCKET_NAME: mapping.snapaddy.com
+          CLOUDFRONT_DISTRIBUTION_ID: E30PL633FC852FC852F
