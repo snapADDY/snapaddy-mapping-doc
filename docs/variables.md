@@ -48,7 +48,9 @@ snapAddy provides a set of pre-defined **variables** which allow you to make map
 | `{{ state }}` | LeadResearch automatically determines the [state ISO codes](https://www.iso.org/obp/ui/#iso:code:3166:DE) |
 | `{{ industry }}` | LeadResearch automatically determines [industry codes](https://developers.snapaddy.com/contacts-rest-api/guides/industry-codes) |
 | `{{ createdBy }}` | returns the e-mail address of the user signed in to LeadResearch/creator of a VisitReport<br/>e.g. "m.mustermann@snapaddy.com" |
+| `{{ completedBy }}` | returns the e-mail address of the user completing a VisitReport<br/>e.g. "m.mustermann@snapaddy.com" |
 | `{{ createdByName }}` | returns the full name of the user signed in to LeadResearch/creator of a VisitReport<br/>e.g. "Max Mustermann" |
+| `{{ completedByName }}` | returns the full name of the user completing a VisitReport<br/>e.g. "Max Mustermann" |
 | `{{ crmUserId }}` | returns the CRM user id of the user signed in to LeadResearch/creator of a VisitReport<br/>must be set in the user management settings |
 | `{{ crmUsername }}` | returns the CRM user name of the user signed in to LeadResearch/creator of a VisitReport<br/>must be set in the user management settings |
 :::
