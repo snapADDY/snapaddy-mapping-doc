@@ -22,7 +22,7 @@ jobs:
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v6
         with:
-          role-to-assume: arn:aws:iam::237519622892:role/CI-gha-mapping-doc
+          role-to-assume: arn:aws:iam::628786078086:role/CI-gha-mapping-doc
           aws-region: eu-central-1
 
       - name: Install pnpm
@@ -55,5 +55,4 @@ jobs:
 
         env:
           SRC_DIR: docs/.vitepress/dist
-          BUCKET_NAME: mapping.snapaddy.com
-          CLOUDFRONT_DISTRIBUTION_ID: E30PL633FC852FC852F
+          BUCKET_NAME: mapping.snapaddy.com-v2
