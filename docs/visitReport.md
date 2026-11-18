@@ -43,6 +43,10 @@ You can create multiple mappings for different templates by exchanging the "*", 
 | visitreport.result['QUESTIONID'].options['OPTIONID'].value | null if not filled/selected else questionoption.value |
 | created | timestamp when the report was created in ISO format |
 | createdBy | returns the e-mail address of the user who created the report |
+| completedAt | timestamp when the report was completed in ISO format |
+| completedBy | returns the e-mail address of the user who completed the report |
 | checked | true, if the report was checked, false if not |
 | checkedAt | timestamp when the report was created in ISO format, null if not checked |
+| voiceAiConversation | transcript of the VoiceAI conversation |
+| voiceAiSummary | summary of the VoiceAI conversation |
 :::
